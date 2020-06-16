@@ -2,13 +2,13 @@
 
 ## /exercises/01-variables/examples 
 
-> 6/16/2020, 11:22:08 AM 
+> 6/16/2020, 3:50:06 PM 
 
 [../README.md](../README.md)
 
 - [/1-declaration-assignment-reassignment.js](#1-declaration-assignment-reassignmentjs)  
 - [/2-reusing-variables.js](#2-reusing-variablesjs)  
-- [/3-const-vs-let.js](#3-const-vs-letjs) - _error_ 
+- [/3-const-vs-let.js](#3-const-vs-letjs) - _error (syntax)_ 
 
 ---
 
@@ -94,22 +94,26 @@ console.log(furniture);
 
 ## /3-const-vs-let.js 
 
-> error 
+> error (syntax) 
 >
 > [review source](../../../exercises/01-variables/examples/3-const-vs-let.js)
 
 ```txt
-UNCAUGHT: TypeError: Assignment to constant variable.
-    at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+UNCAUGHT:   ...  /exercises/01-variables/examples/3-const-vs-let.js:12
+const constantVariable1;
+      ^^^^^^^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
 ```
 
 ```js
@@ -117,15 +121,15 @@ UNCAUGHT: TypeError: Assignment to constant variable.
 
 // const is short for "constant".  a variable that never changes
 
-
+debugger;
 // const variables cannot be declared without assigning a value
 // this will throw an error
 //  "Missing initializer in const declaration"
 //  this is a "creation phase" error, meaning the code will not even execute!
 // uncomment the next two lines of code to get the error
 
-// const constantVariable1;
-// console.log(constantVariable1);
+const constantVariable1;
+console.log(constantVariable1);
 
 // const variables also cannot be reassigned
 // this will throw an error
@@ -133,7 +137,6 @@ UNCAUGHT: TypeError: Assignment to constant variable.
 const constantVariable2 = 'constant value';
 constantVariable2 = 'new value';
 console.log(constantVariable2);
-
 
 // all of these things are possible with let
 
