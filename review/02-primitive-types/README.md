@@ -2,7 +2,7 @@
 
 ## /exercises/02-primitive-types 
 
-> 6/16/2020, 8:52:02 PM 
+> 6/16/2020, 10:17:56 PM 
 
 [../README.md](../README.md)
 

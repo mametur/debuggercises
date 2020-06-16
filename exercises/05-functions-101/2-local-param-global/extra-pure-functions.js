@@ -15,26 +15,50 @@
 
 // which of these are pure functions?
 
-function a() {
+/*function a() {
   return x + y;
+}*/
+function a() {
+	let x = 1;
+	let y = 2;
+	return x + y;
 }
 
+/*
 function b(y) {
-  result = x + y;
-  return result;
+	result = x + y;
+	return result;
+}
+*/
+function b(y) {
+	let x = 1;
+	return x + y;
 }
 
 function c(y, x) {
-  const m = y - x
-  return x + m;
+	const m = y - x; // just this function is pure
+	return x + m;
 }
+
+/*
+function d(x, y) {
+	const a = 'hi';
+	return x + y + z;
+}*/
 
 function d(x, y) {
-  const a = 'hi';
-  return x + y + z;
+	const a = 'hi';
+	return x + y + a;
 }
+/*
 
 function e(x, y) {
-  p += z;
-  return z + y;
+	p += z;
+	return z + y;
+}
+*/
+function e(x, y) {
+	let p;
+	p += x;
+	return p + y;
 }
