@@ -2,12 +2,12 @@
 
 ## /exercises/05-functions-101/2-local-param-global 
 
-> 6/16/2020, 3:50:06 PM 
+> 6/16/2020, 8:52:02 PM 
 
 [../README.md](../README.md)
 
 - [/0-example.js](#0-examplejs)  
-- [/1-parameter-local.js](#1-parameter-localjs) - _incomplete_ 
+- [/1-parameter-local.js](#1-parameter-localjs) - _error_ 
 - [/2-parameter-global.js](#2-parameter-globaljs) - _incomplete_ 
 - [/3-parameter-global.js](#3-parameter-globaljs) - _incomplete_ 
 - [/5-local-global.js](#5-local-globaljs) - _incomplete_ 
@@ -143,34 +143,34 @@ console.log('global2:', global2);
 
 ## /1-parameter-local.js 
 
-> incomplete 
+> error 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/1-parameter-local.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1: funk
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:10:9)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
     at Module.load (module.js:565:32)
     at tryModuleLoad (module.js:505:12)
     at Function.Module._load (module.js:497:3)
     at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at require (internal/module.js:11:18) 
 ```
 
 ```js
 'use strict';
 
 function funk(parameter) {
-  const local = `funky`;
-  return `${local} ${parameter}`;
+	const local = `funky`;
+	return `${local} ${parameter}`;
 }
 
 const funkReturn1 = funk('hello');
-const funk1 = funkReturn1 === _;
+const funk1 = funkReturn1 === 'hello funky';
 console.assert(funk1, 'Test 1: funk');
 
 const funkReturn2 = funk('boat');
@@ -181,11 +181,9 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === _;
 console.assert(funk3, 'Test 3: funk');
 
-
-
 function jazz(parameter) {
-  const local = `jazzy`;
-  return `${local} ${parameter}`;
+	const local = `jazzy`;
+	return `${local} ${parameter}`;
 }
 
 const jazzReturn1 = funk('hello');
@@ -223,7 +221,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js
@@ -285,7 +283,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js
@@ -337,7 +335,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js
@@ -410,7 +408,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js
@@ -483,7 +481,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js
@@ -547,7 +545,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js

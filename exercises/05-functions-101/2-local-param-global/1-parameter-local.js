@@ -1,12 +1,12 @@
 'use strict';
 
 function funk(parameter) {
-  const local = `funky`;
-  return `${local} ${parameter}`;
+	const local = `funky`;
+	return `${local} ${parameter}`;
 }
 
 const funkReturn1 = funk('hello');
-const funk1 = funkReturn1 === _;
+const funk1 = funkReturn1 === 'hello funky';
 console.assert(funk1, 'Test 1: funk');
 
 const funkReturn2 = funk('boat');
@@ -17,11 +17,9 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === _;
 console.assert(funk3, 'Test 3: funk');
 
-
-
 function jazz(parameter) {
-  const local = `jazzy`;
-  return `${local} ${parameter}`;
+	const local = `jazzy`;
+	return `${local} ${parameter}`;
 }
 
 const jazzReturn1 = funk('hello');

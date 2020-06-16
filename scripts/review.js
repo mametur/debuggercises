@@ -77,21 +77,18 @@ process.on('exit', (exitCode) => {
 		index.reviewPath = index.reviewPath;
 
 		// https://geedew.com/remove-a-directory-that-is-not-empty-in-nodejs/
-		const deleteFolderRecursive = function (path) {
-			var files = [];
-			if (fs.existsSync(path)) {
-				files = fs.readdirSync(path);
-				files.forEach(function (file, index) {
-					var curPath = path + '/' + file;
+		const deleteFolderRecursive = function (pathToDelete) {
+			if (fs.existsSync(pathToDelete)) {
+				const files = fs.readdirSync(pathToDelete);
+				files.forEach((file) => {
+					const curPath = path.normalize(path.join(pathToDelete, file));
 					if (fs.lstatSync(curPath).isDirectory()) {
-						// recurse
 						deleteFolderRecursive(curPath);
 					} else {
-						// delete file
 						fs.unlinkSync(curPath);
 					}
 				});
-				fs.rmdirSync(path);
+				fs.rmdirSync(pathToDelete);
 			}
 		};
 		const absReviewPath = path.normalize(

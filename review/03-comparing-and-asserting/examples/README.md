@@ -2,7 +2,7 @@
 
 ## /exercises/03-comparing-and-asserting/examples 
 
-> 6/16/2020, 3:50:06 PM 
+> 6/16/2020, 8:52:02 PM 
 
 [../README.md](../README.md)
 
@@ -218,7 +218,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:115:1) 
 ```
 
 ```js

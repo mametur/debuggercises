@@ -2,85 +2,79 @@
 
 ## /exercises/05-functions-101/1-scrambles 
 
-> 6/16/2020, 3:50:06 PM 
+> 6/16/2020, 8:52:02 PM 
 
 [../README.md](../README.md)
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/1-scrambles/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/1-scrambles/1-write-expected.js:11:31)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
++ PASS: Assertion 1
++ PASS: Assertion 2
++ PASS: Assertion 3
++ PASS: Assertion 4
++ PASS: Assertion 5
++ PASS: Assertion 6
 ```
 
 ```js
 'use strict';
 
 function scramble(param1, param2, param3) {
-  return `${param3}${param1}${param2}`;
+	return `${param3}${param1}${param2}`;
 }
 
-const arg1 = "a";
-const arg2 = "c";
-const arg3 = "b";
+const arg1 = 'a';
+const arg2 = 'c';
+const arg3 = 'b';
 const returned1 = scramble(arg1, arg2, arg3);
-const isTrue1 = returned1 === _;
+const isTrue1 = returned1 === 'bac';
 console.assert(isTrue1, 'Assertion 1');
 
-const arg4 = "a";
-const arg5 = "b";
-const arg6 = "c";
+const arg4 = 'a';
+const arg5 = 'b';
+const arg6 = 'c';
 const returned2 = scramble(arg4, arg5, arg6);
-const isTrue2 = returned2 === _;
+const isTrue2 = returned2 === 'cab';
 console.assert(isTrue2, 'Assertion 2');
 
-const arg7 = "c";
-const arg8 = "b";
-const arg9 = "a";
+const arg7 = 'c';
+const arg8 = 'b';
+const arg9 = 'a';
 const returned3 = scramble(arg8, arg9, arg7);
-const isTrue3 = returned3 === _;
+const isTrue3 = returned3 === 'cba';
 console.assert(isTrue3, 'Assertion 3');
 
-const arg10 = "b";
-const arg11 = "a";
-const arg12 = "c";
+const arg10 = 'b';
+const arg11 = 'a';
+const arg12 = 'c';
 const returned4 = scramble(arg12, arg11, arg10);
-const isTrue4 = returned4 === _;
+const isTrue4 = returned4 === 'bca';
 console.assert(isTrue4, 'Assertion 4');
 
-const arg13 = "b";
-const arg14 = "c";
-const arg15 = "a";
+const arg13 = 'b';
+const arg14 = 'c';
+const arg15 = 'a';
 const returned5 = scramble(arg14, arg15, arg13);
-const isTrue5 = returned5 === _;
+const isTrue5 = returned5 === 'bca';
 console.assert(isTrue5, 'Assertion 5');
 
-const arg16 = "c";
-const arg17 = "a";
-const arg18 = "b";
+const arg16 = 'c';
+const arg17 = 'a';
+const arg18 = 'b';
 const returned6 = scramble(arg18, arg17, arg16);
-const isTrue6 = returned6 === _;
+const isTrue6 = returned6 === 'cba';
 console.assert(isTrue6, 'Assertion 6');
-
 
 ```
 
@@ -90,72 +84,69 @@ console.assert(isTrue6, 'Assertion 6');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/1-scrambles/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/1-scrambles/2-write-arguments.js:15:27)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:118:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
 function mystery(a, b) {
-  let result = '';
-  if (typeof a === b) {
-    result = 'path 1';
-  } else if (a === typeof b) {
-    result = 'path 2';
-  } else {
-    result = 'path 3';
-  }
-  return result;
+	let result = '';
+	if (typeof a === b) {
+		result = 'path 1';
+	} else if (a === typeof b) {
+		result = 'path 2';
+	} else {
+		result = 'path 3';
+	}
+	return result;
 }
 
-
 const _1_expect = 'path 1';
-const _1_actual = mystery(_, _);
+const _1_actual = mystery(true, 'boolean');
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(_, _);
+const _2_actual = mystery(NaN, 'number');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = 'path 1';
-const _3_actual = mystery(_, _);
+const _3_actual = mystery(null, 'object');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 const _4_expect = 'path 2';
-const _4_actual = mystery(_, _);
+const _4_actual = mystery('boolean', false);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'path 2';
-const _5_actual = mystery(_, _);
+const _5_actual = mystery('undefined', undefined);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'path 2';
-const _6_actual = mystery(_, _);
+const _6_actual = mystery('boolean', true);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 const _7_expect = 'path 3';
-const _7_actual = mystery(_, _);
+const _7_actual = mystery(2, 2);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 3';
-const _8_actual = mystery(_, _);
+const _8_actual = mystery(0, 0);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 'path 3';
-const _9_actual = mystery(_, _);
+const _9_actual = mystery('hello', 'hello');
 console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
@@ -166,30 +157,32 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-function.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/1-scrambles/3-write-function.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/1-scrambles/3-write-function.js:8:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
 function mystery(a, b) {
-
+	if (Boolean(a) === false && Boolean(b) === false) {
+		return 'path 1';
+	} else if (typeof a === typeof b) {
+		return 'path 2';
+	} else {
+		return 'path 3';
+	}
 }
-
-
 const _1_expect = 'path 1';
 const _1_actual = mystery(0, null);
 console.assert(_1_actual === _1_expect, 'Test 1');
