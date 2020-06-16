@@ -2,15 +2,15 @@
 
 // const is short for "constant".  a variable that never changes
 
-
+debugger;
 // const variables cannot be declared without assigning a value
 // this will throw an error
 //  "Missing initializer in const declaration"
 //  this is a "creation phase" error, meaning the code will not even execute!
 // uncomment the next two lines of code to get the error
 
-// const constantVariable1;
-// console.log(constantVariable1);
+const constantVariable1;
+console.log(constantVariable1);
 
 // const variables also cannot be reassigned
 // this will throw an error
@@ -18,7 +18,6 @@
 const constantVariable2 = 'constant value';
 constantVariable2 = 'new value';
 console.log(constantVariable2);
-
 
 // all of these things are possible with let
 
