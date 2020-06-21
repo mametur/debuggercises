@@ -15,14 +15,14 @@
     they exist to help us humans
 */
 
-
 /**
  * returns the type of any JS value
  * @param {any} value - the value to check
  * @returns {string} - the type of the parameter
  */
+
 function findTheType(value) {
-  return typeof value;
+	return value;
 }
 
 /**
@@ -32,7 +32,7 @@ function findTheType(value) {
  * @returns {number} the sum of x and y
  */
 function add(x, y) {
-  return x + y
+	return x + y;
 }
 
 /**
@@ -42,7 +42,7 @@ function add(x, y) {
  * @returns {boolean} result of the comparison
  */
 function strictEqual(a, b) {
-  return a === b;
+	return a === b;
 }
 
 /**
@@ -51,5 +51,5 @@ function strictEqual(a, b) {
  * @returns {string} a new string, the parameter backwards
  */
 function reverseString(str) {
-  return str.split('').reverse().join('');
+	return str.split('').reverse().join('');
 }

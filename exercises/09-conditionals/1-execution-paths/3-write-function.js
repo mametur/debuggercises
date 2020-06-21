@@ -1,54 +1,54 @@
 function mystery(a, b) {
-  let result = '';
-  if (_) {
-    result = 'path 1';
-  } else if (_) {
-    result = 'path 2';
-  } else if (_) {
-    result = 'path 3';
-  } else {
-    result = 'path 4';
-  }
-  return result;
+	let result = '';
+	if (a && b) {
+		result = 'path 1';
+	} else if (!a && !b) {
+		result = 'path 2';
+	} else if (typeof a === typeof b) {
+		result = 'path 3';
+	} else {
+		result = 'path 4';
+	}
+	return result;
 }
 
 // path 1
 const _01_expect = 'path 1';
-const _01_actual = mystery(1, 'turtle');
+const _01_actual = mystery(1, 'turtle'); // both true
 console.assert(_01_actual === _01_expect, 'Test 01');
 
 const _02_expect = 'path 1';
-const _02_actual = mystery('turtle', 'turtle');
+const _02_actual = mystery('turtle', 'turtle'); //both true
 console.assert(_02_actual === _02_expect, 'Test 02');
 
 const _03_expect = 'path 1';
-const _03_actual = mystery(42, true);
+const _03_actual = mystery(42, true); // both true
 console.assert(_03_actual === _03_expect, 'Test 03');
 
 // path 2
 const _04_expect = 'path 2';
-const _04_actual = mystery(0, '');
+const _04_actual = mystery(0, ''); //both false
 console.assert(_04_actual === _04_expect, 'Test 04');
 
 const _05_expect = 'path 2';
-const _05_actual = mystery(null, NaN);
+const _05_actual = mystery(null, NaN); // both false
 console.assert(_05_actual === _05_expect, 'Test 05');
 
 const _06_expect = 'path 2';
-const _06_actual = mystery(false, false);
+const _06_actual = mystery(false, false); // both false
 console.assert(_06_actual === _06_expect, 'Test 06');
 
 // path 3
 const _07_expect = 'path 3';
-const _07_actual = mystery(0, 12);
+const _07_actual = mystery(0, 12); // a= false b = true
 console.assert(_07_actual === _07_expect, 'Test 07');
 
 const _08_expect = 'path 3';
-const _08_actual = mystery(false, true);
+const _08_actual = mystery(false, true); // a false b =true
 console.assert(_08_actual === _08_expect, 'Test 08');
 
 const _09_expect = 'path 3';
-const _09_actual = mystery('x', '');
+const _09_actual = mystery('x', ''); // a = true b = false
 console.assert(_09_actual === _09_expect, 'Test 09');
 
 // path 4
