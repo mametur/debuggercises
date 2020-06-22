@@ -1,40 +1,33 @@
 # Debuggercises 
 
-> 6/22/2020, 1:10:47 PM 
+> 6/22/2020, 6:43:11 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/2-conditional-bodies 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _error (syntax)_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _error (syntax)_ 
-- [/3-write-function.js](#3-write-functionjs) - _error (syntax)_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/2-conditional-bodies/1-write-expected.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/2-conditional-bodies/1-write-expected.js:1
-(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/1-write-expected.js
-                                                              ^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/1-write-expected.js
 function mystery(a) {
 	let result = '';
 	if (typeof a !== 'number') {
@@ -46,31 +39,6 @@ function mystery(a) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a) {
-  let result = '';
-  if (typeof a !== 'number') {
-    result = Number(a);
-  } else if (a > 0) {
-    result = a + a;
-  } else {
-    result = a - a;
-  }
-  return result;
-}
-=======
-const mystery = (a) => {
-  let result = '';
-  if (typeof a !== 'number') {
-    result = Number(a);
-  } else if (a > 0) {
-    result = a + a;
-  } else {
-    result = a - a;
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/2-conditional-bodies/1-write-expected.js
 
 const _1_expect = 0;
 const _1_actual = mystery(0);
@@ -116,30 +84,23 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /2-write-arguments.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/2-conditional-bodies/2-write-arguments.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/2-conditional-bodies/2-write-arguments.js:1
-(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/2-write-arguments.js
-                                                              ^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/2-write-arguments.js
 function mystery(a) {
 	let result = '';
 	if (typeof a === 'boolean') {
@@ -151,31 +112,6 @@ function mystery(a) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a) {
-  let result = '';
-  if (typeof a === 'boolean') {
-    result = !a;
-  } else if (a) {
-    result = String(a);
-  } else {
-    result = a;
-  }
-  return result;
-}
-=======
-const mystery = (a) => {
-  let result = '';
-  if (typeof a === 'boolean') {
-    result = !a;
-  } else if (a) {
-    result = String(a);
-  } else {
-    result = a;
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/2-conditional-bodies/2-write-arguments.js
 
 const _1_expect = 0;
 const _1_actual = mystery(0);
@@ -222,26 +158,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-function.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/2-conditional-bodies/3-write-function.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/2-conditional-bodies/3-write-function.js:6
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/3-write-function.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -250,7 +180,6 @@ SyntaxError: Unexpected token <<
   don't move on to the next 3 tests until you've finished the path you're working on
 */
 
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/3-write-function.js
 function mystery(a, b) {
 	let result = '';
 	if (typeof a === typeof b) {
@@ -262,31 +191,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (typeof a === typeof b) {
-    result = _;
-  } else if (Boolean(a) === Boolean(b)) {
-    result = _;
-  } else {
-    result = _;
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (typeof a === typeof b) {
-    result = _;
-  } else if (Boolean(a) === Boolean(b)) {
-    result = _;
-  } else {
-    result = _;
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/2-conditional-bodies/3-write-function.js
 
 // path 1
 const _1_expect = '12';

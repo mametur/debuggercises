@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 1:10:47 PM 
+> 6/22/2020, 6:43:11 PM 
 
 ## [exercises](../../README.md)/[20-operator-precedence](../README.md)/0-examples 
 

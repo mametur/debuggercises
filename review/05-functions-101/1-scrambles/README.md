@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/22/2020, 1:10:47 PM 
+> 6/22/2020, 6:43:11 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/1-scrambles 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
@@ -154,45 +154,33 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-function.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/1-scrambles/3-write-function.js)
 
 ```txt
 + PASS: Test 1
-UNCAUGHT: ReferenceError: scramble is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/1-scrambles/3-write-function.js:15:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 2
++ PASS: Test 3
 ```
 
 ```js
-function mystery(a, b) {
-	if (Boolean(a) === false && Boolean(b) === false) {
-		return 'path 1';
-	} else if (typeof a === typeof b) {
-		return 'path 2';
-	} else {
-		return 'path 3';
-	}
+'use strict';
+
+function scramble(param1, param2, param3) {
+	return `${param3}${param1}${param2}`;
 }
-const _1_expect = 'path 1';
-const _1_actual = mystery(0, null);
+
+const _1_expect = 'yxz';
+const _1_actual = scramble('x', 'z', 'y');
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'zxy';
 const _2_actual = scramble('x', 'y', 'z');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = 'zxy';
-const _3_actual = scramble('x', 'z', 'y');
+const _3_expect = 'yzx';
+const _3_actual = scramble('z', 'x', 'y');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 ```

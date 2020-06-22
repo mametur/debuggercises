@@ -3,7 +3,6 @@
   don't move on to the next 3 tests until you've finished the path you're working on
 */
 
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/3-write-function.js
 function mystery(a, b) {
 	let result = '';
 	if (typeof a === typeof b) {
@@ -15,31 +14,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (typeof a === typeof b) {
-    result = _;
-  } else if (Boolean(a) === Boolean(b)) {
-    result = _;
-  } else {
-    result = _;
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (typeof a === typeof b) {
-    result = _;
-  } else if (Boolean(a) === Boolean(b)) {
-    result = _;
-  } else {
-    result = _;
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/2-conditional-bodies/3-write-function.js
 
 // path 1
 const _1_expect = '12';

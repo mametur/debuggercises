@@ -4,14 +4,20 @@
 //  hint: demorgan
 
 const notAndA = (x, y) => {
-  return _;
+	if (x === y) {
+		return !x;
+	} else {
+		return false;
+	}
 };
-
 
 const notAndB = (x, y) => {
-  return _;
+	if (x !== y) {
+		return false;
+	} else {
+		return !y;
+	}
 };
-
 
 const _1_arg1 = false;
 const _1_arg2 = false;

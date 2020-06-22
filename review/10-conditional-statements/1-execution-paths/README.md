@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/22/2020, 1:10:47 PM 
+> 6/22/2020, 6:43:11 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
 
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
 - [/3-write-arguments.js](#3-write-argumentsjs) - _pass_ 
 - [/4-write-function.js](#4-write-functionjs) - _pass_ 
 - [/5-write-function.js](#5-write-functionjs) - _error_ 
@@ -87,74 +87,72 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/2-write-arguments.js:15:27)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
 const mystery = (a, b) => {
-  let result = '';
-  if (typeof a === b) {
-    result = 'path 1';
-  } else if (a === typeof b) {
-    result = 'path 2';
-  } else {
-    result = 'path 3';
-  }
-  return result;
+	let result = '';
+	if (typeof a === b) {
+		result = 'path 1';
+	} else if (a === typeof b) {
+		result = 'path 2';
+	} else {
+		result = 'path 3';
+	}
+	return result;
 };
 
 // path 1
 const _1_expect = 'path 1';
-const _1_actual = mystery(_, _);
+const _1_actual = mystery(NaN, 'number');
 console.assert(_1_actual === _1_expect, 'Test 1');
 
 const _2_expect = 'path 1';
-const _2_actual = mystery(_, _);
+const _2_actual = mystery(null, 'object');
 console.assert(_2_actual === _2_expect, 'Test 2');
 
 const _3_expect = 'path 1';
-const _3_actual = mystery(_, _);
+const _3_actual = mystery(undefined, 'undefined');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
 // path 2
 const _4_expect = 'path 2';
-const _4_actual = mystery(_, _);
+const _4_actual = mystery('number', NaN);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
 const _5_expect = 'path 2';
-const _5_actual = mystery(_, _);
+const _5_actual = mystery('object', null);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
 const _6_expect = 'path 2';
-const _6_actual = mystery(_, _);
+const _6_actual = mystery('undefined', undefined);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
 // path 3
 const _7_expect = 'path 3';
-const _7_actual = mystery(_, _);
+const _7_actual = mystery('mame', 63);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = 'path 3';
-const _8_actual = mystery(_, _);
+const _8_actual = mystery(null, undefined);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 'path 3';
-const _9_actual = mystery(_, _);
+const _9_actual = mystery(NaN, undefined);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```

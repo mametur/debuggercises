@@ -1,4 +1,3 @@
-<<<<<<< HEAD:exercises/09-conditionals/2-conditional-bodies/2-write-arguments.js
 function mystery(a) {
 	let result = '';
 	if (typeof a === 'boolean') {
@@ -10,31 +9,6 @@ function mystery(a) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a) {
-  let result = '';
-  if (typeof a === 'boolean') {
-    result = !a;
-  } else if (a) {
-    result = String(a);
-  } else {
-    result = a;
-  }
-  return result;
-}
-=======
-const mystery = (a) => {
-  let result = '';
-  if (typeof a === 'boolean') {
-    result = !a;
-  } else if (a) {
-    result = String(a);
-  } else {
-    result = a;
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/2-conditional-bodies/2-write-arguments.js
 
 const _1_expect = 0;
 const _1_actual = mystery(0);

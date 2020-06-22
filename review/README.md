@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 1:10:47 PM 
+> 6/22/2020, 6:43:11 PM 
 
 ## /exercises 
 
@@ -67,7 +67,7 @@
   - [/1-scrambles](./05-functions-101/1-scrambles/README.md)
     - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _pass_ 
     - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
-    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _error_ 
+    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _pass_ 
   - [/2-local-param-global](./05-functions-101/2-local-param-global/README.md)
     - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs)  
     - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
@@ -105,8 +105,8 @@
     - [/3.js](./08-block-scope/1-missing-values/README.md#3js) - _pass_ 
 - [/08-functions-201](./08-functions-201/README.md)
   - [/0-example.js](./08-functions-201/README.md#0-examplejs) - _pass_ 
-  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _incomplete_ 
-  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _incomplete_ 
+  - [/1-exercise.js](./08-functions-201/README.md#1-exercisejs) - _pass_ 
+  - [/2-exercise.js](./08-functions-201/README.md#2-exercisejs) - _pass_ 
 - [/09-block-scope](./09-block-scope/README.md)
   - [/1-missing-values](./09-block-scope/1-missing-values/README.md)
     - [/1.js](./09-block-scope/1-missing-values/README.md#1js) - _pass_ 
@@ -133,14 +133,14 @@
     - [/6-unreachable-paths.js](./10-conditional-statements/0-examples/README.md#6-unreachable-pathsjs) - _pass_ 
   - [/1-execution-paths](./10-conditional-statements/1-execution-paths/README.md)
     - [/1-write-expected.js](./10-conditional-statements/1-execution-paths/README.md#1-write-expectedjs) - _pass_ 
-    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _incomplete_ 
+    - [/2-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#2-write-argumentsjs) - _pass_ 
     - [/3-write-arguments.js](./10-conditional-statements/1-execution-paths/README.md#3-write-argumentsjs) - _pass_ 
     - [/4-write-function.js](./10-conditional-statements/1-execution-paths/README.md#4-write-functionjs) - _pass_ 
     - [/5-write-function.js](./10-conditional-statements/1-execution-paths/README.md#5-write-functionjs) - _error_ 
   - [/2-conditional-bodies](./10-conditional-statements/2-conditional-bodies/README.md)
-    - [/1-write-expected.js](./10-conditional-statements/2-conditional-bodies/README.md#1-write-expectedjs) - _error (syntax)_ 
-    - [/2-write-arguments.js](./10-conditional-statements/2-conditional-bodies/README.md#2-write-argumentsjs) - _error (syntax)_ 
-    - [/3-write-function.js](./10-conditional-statements/2-conditional-bodies/README.md#3-write-functionjs) - _error (syntax)_ 
+    - [/1-write-expected.js](./10-conditional-statements/2-conditional-bodies/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./10-conditional-statements/2-conditional-bodies/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./10-conditional-statements/2-conditional-bodies/README.md#3-write-functionjs) - _pass_ 
 - [/11-refactoring-conditionals](./11-refactoring-conditionals/README.md)
   - [/0-examples](./11-refactoring-conditionals/0-examples/README.md)
     - [/0-statement-and-operator.js](./11-refactoring-conditionals/0-examples/README.md#0-statement-and-operatorjs) - _error (syntax)_ 
