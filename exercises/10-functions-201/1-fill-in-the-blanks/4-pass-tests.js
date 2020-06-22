@@ -4,19 +4,20 @@
 // describe the function's behavior in the comment
 
 /**
- * _
+ * check the value is NaN
  * @param {any} a
  * @returns {boolean}
  */
 function mystery(a) {
-  // no need to check a , they can be any type
+	// no need to check a , they can be any type
 
-  const result = _;
+	const result = Number.isNaN(Number(a));
 
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
+	if (typeof result !== 'boolean') {
+		throw new TypeError();
+	}
+	return result;
 }
-
 
 const _1_expect = false;
 const _1_actual = mystery('1');

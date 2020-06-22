@@ -9,14 +9,15 @@
  * @returns {boolean}
  */
 function sameTruthiness(a, b) {
-  // no need to check a or b, they can be any type
+	// no need to check a or b, they can be any type
 
-  const result = _;
+	const result = Boolean(a) === Boolean(b);
 
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
+	if (typeof result !== 'boolean') {
+		throw new TypeError();
+	}
+	return result;
 }
-
 
 const _1_expect = false;
 const _1_actual = sameTruthiness(1, 0);
