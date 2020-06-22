@@ -3,7 +3,7 @@
 // write a function that behaves the same as &&
 //  ... without using &&, only using ? :
 const and = (left, right) => {
-  return _ ? _ : _;
+	return left ? right : left;
 };
 
 const _1_expect = 0;

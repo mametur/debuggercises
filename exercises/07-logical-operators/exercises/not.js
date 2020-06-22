@@ -3,7 +3,7 @@
 // write a function that behaves the same as !
 //  ... but doesn't use !, only using ? :
 const not = (value) => {
-  return _ ? _ : _;
+	return value ? false : true;
 };
 
 const _1_expect = true;
