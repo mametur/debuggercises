@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 12:46:13 PM 
+> 6/22/2020, 1:10:47 PM 
 
 ## /exercises 
 
@@ -66,8 +66,8 @@
     - [/6-test-cases.js](./05-functions-101/0-examples/README.md#6-test-casesjs) - _pass_ 
   - [/1-scrambles](./05-functions-101/1-scrambles/README.md)
     - [/1-write-expected.js](./05-functions-101/1-scrambles/README.md#1-write-expectedjs) - _pass_ 
-    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _error (syntax)_ 
-    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _error (syntax)_ 
+    - [/2-write-arguments.js](./05-functions-101/1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./05-functions-101/1-scrambles/README.md#3-write-functionjs) - _error_ 
   - [/2-local-param-global](./05-functions-101/2-local-param-global/README.md)
     - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs)  
     - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
@@ -97,9 +97,9 @@
     - [/4-not.js](./07-logical-operators/examples/README.md#4-notjs)  
     - [/5-short-circuiting.js](./07-logical-operators/examples/README.md#5-short-circuitingjs)  
   - [/exercises](./07-logical-operators/exercises/README.md)
-    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _incomplete_ 
-    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _incomplete_ 
-    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _incomplete_ 
+    - [/and.js](./07-logical-operators/exercises/README.md#andjs) - _pass_ 
+    - [/not.js](./07-logical-operators/exercises/README.md#notjs) - _pass_ 
+    - [/or.js](./07-logical-operators/exercises/README.md#orjs) - _pass_ 
 - [/08-block-scope](./08-block-scope/README.md)
   - [/1-missing-values](./08-block-scope/1-missing-values/README.md)
     - [/3.js](./08-block-scope/1-missing-values/README.md#3js) - _pass_ 
