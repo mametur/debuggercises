@@ -1,10 +1,18 @@
 # Debuggercises 
 
-## /exercises/05-functions-101/2-local-param-global 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
+
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-example.js](#0-examplejs)  
 - [/1-parameter-local.js](#1-parameter-localjs) - _pass_ 
@@ -15,7 +23,6 @@
 - [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _pass_ 
 - [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _pass_ 
 - [/extra-pure-functions.js](#extra-pure-functionsjs)  
-
 ---
 
 ## /0-example.js 
@@ -71,9 +78,9 @@ console.log('\n-- Parameters ---');
 //  all variables used inside this function's body are declared as parameters
 //  the variables get their value from arguments when the function is called
 
-function usesParameters(param1, param2) {
+const usesParameters = (param1, param2) => {
   return `${param1}, ${param2}`;
-}
+};
 
 const fromParams1 = usesParameters('hi', 'bye');
 console.log('fromParams1:', fromParams1);
@@ -86,11 +93,11 @@ console.log('\n-- Local Variables ---');
 //  all variables used inside this function's body are declared locally
 //  the variables get their value from a local assignmnet
 
-function usesLocals() {
+const usesLocals = () => {
   const local1 = 'town';
   const local2 = 'ship';
   return `${local1}, ${local2}`;
-}
+};
 
 const fromLocals1 = usesLocals();
 console.log('fromLocals1:', fromLocals1);
@@ -103,11 +110,11 @@ console.log('\n-- Global Variables ---');
 //  all variables used inside this function's body are declared globally
 //  the variables get their value from local and global assignments (confusing!)
 
-function usesGlobals() {
+const usesGlobals = () => {
   global1 = `${global}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
-}
+};
 
 let global1 = 'a';
 let global2 = 'b';
@@ -148,21 +155,59 @@ console.log('global2:', global2);
 > [review source](../../../exercises/05-functions-101/2-local-param-global/1-parameter-local.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: funk
 + PASS: Test 2: funk
 + PASS: Test 3: funk
 + PASS: Test 1: jazz
 + PASS: Test 2: jazz
 + PASS: Test 3: jazz
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
 'use strict';
 
+<<<<<<< HEAD
 function funk(parameter) {
 	const local = `funky`;
 	return `${local} ${parameter}`;
 }
+||||||| merged common ancestors
+function funk(parameter) {
+  const local = `funky`;
+  return `${local} ${parameter}`;
+}
+=======
+const funk = (parameter) => {
+  const local = `funky`;
+  return `${local} ${parameter}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
@@ -176,21 +221,61 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === 'funky tree';
 console.assert(funk3, 'Test 3: funk');
 
+<<<<<<< HEAD
 function jazz(parameter) {
 	const local = `jazzy`;
 	return `${local} ${parameter}`;
 }
+||||||| merged common ancestors
 
+
+function jazz(parameter) {
+  const local = `jazzy`;
+  return `${local} ${parameter}`;
+}
+=======
+
+
+const jazz = (parameter) => {
+  const local = `jazzy`;
+  return `${local} ${parameter}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+
+<<<<<<< HEAD
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === 'jazzy hello';
+||||||| merged common ancestors
+const jazzReturn1 = funk('hello');
+const jazz1 = jazzReturn1 === _;
+=======
+const jazzReturn1 = jazz('hello');
+const jazz1 = jazzReturn1 === _;
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(jazz1, 'Test 1: jazz');
 
+<<<<<<< HEAD
 const jazzReturn2 = jazz('boat');
 const jazz2 = jazzReturn2 === 'jazzy boat';
+||||||| merged common ancestors
+const jazzReturn2 = funk('boat');
+const jazz2 = jazzReturn2 === _;
+=======
+const jazzReturn2 = jazz('boat');
+const jazz2 = jazzReturn2 === _;
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(jazz2, 'Test 2: jazz');
 
+<<<<<<< HEAD
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === 'jazzy tree';
+||||||| merged common ancestors
+const jazzReturn3 = funk('tree');
+const jazz3 = jazzReturn3 === _;
+=======
+const jazzReturn3 = jazz('tree');
+const jazz3 = jazzReturn3 === _;
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(jazz3, 'Test 3: jazz');
 
 ```
@@ -206,9 +291,35 @@ console.assert(jazz3, 'Test 3: jazz');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/2-parameter-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: funk
 + PASS: Test 2: funk
 + PASS: Test 3: funk
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -225,10 +336,22 @@ console.assert(jazz3, 'Test 3: jazz');
 
 let global = '';
 
+<<<<<<< HEAD
 function funk(parameter) {
 	global = `${global}funky`;
 	return `${global} ${parameter}`;
 }
+||||||| merged common ancestors
+function funk(parameter) {
+  global = `${global}funky`;
+  return `${global} ${parameter}`;
+}
+=======
+const funk = (parameter) => {
+  global = `${global}funky`;
+  return `${global} ${parameter}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
@@ -259,9 +382,35 @@ console.assert(funk3, 'Test 3: funk');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/3-parameter-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: jazz
 + PASS: Test 2: jazz
 + PASS: Test 3: jazz
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -269,10 +418,22 @@ console.assert(funk3, 'Test 3: funk');
 
 let global = '<3';
 
+<<<<<<< HEAD
 function jazz(parameter) {
 	global = `${global} jazzy`;
 	return `${global} ${parameter}`;
 }
+||||||| merged common ancestors
+function jazz(parameter) {
+  global = `${global} jazzy`;
+  return `${global} ${parameter}`;
+}
+=======
+const jazz = (parameter) => {
+  global = `${global} jazzy`;
+  return `${global} ${parameter}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === '<3 jazzy hello';
@@ -303,6 +464,7 @@ console.assert(jazz3, 'Test 3: jazz');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: funk
 + PASS: Test 2: global
 + PASS: Test 3: global
@@ -312,6 +474,31 @@ console.assert(jazz3, 'Test 3: jazz');
 + PASS: Test 7: funk
 + PASS: Test 8: global
 + PASS: Test 9: global
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -319,11 +506,25 @@ console.assert(jazz3, 'Test 3: jazz');
 
 let global = 'awesome';
 
+<<<<<<< HEAD
 function funk() {
 	const local = 'funky';
 	global = `#${global}`;
 	return `${local} ${global}`;
 }
+||||||| merged common ancestors
+function funk() {
+  const local = 'funky'
+  global = `#${global}`;
+  return `${local} ${global}`;
+}
+=======
+const funk = () => {
+  const local = 'funky'
+  global = `#${global}`;
+  return `${local} ${global}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === 'funky #awesome';
@@ -374,6 +575,7 @@ console.assert(globalTest6, 'Test 9: global');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/6-local-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: jazz
 + PASS: Test 2: global
 + PASS: Test 3: global
@@ -383,6 +585,31 @@ console.assert(globalTest6, 'Test 9: global');
 + PASS: Test 7: jazz
 + PASS: Test 8: global
 + PASS: Test 9: global
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -390,11 +617,25 @@ console.assert(globalTest6, 'Test 9: global');
 
 let global = 'turtle';
 
+<<<<<<< HEAD
 function jazz() {
 	const local = 'jazzy';
 	global = `${global}!`;
 	return `${global} ${local}`;
 }
+||||||| merged common ancestors
+function jazz() {
+  const local = 'jazzy'
+  global = `${global}!`;
+  return `${global} ${local}`;
+}
+=======
+const jazz = () => {
+  const local = 'jazzy'
+  global = `${global}!`;
+  return `${global} ${local}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === 'turtle! jazzy';
@@ -445,6 +686,7 @@ console.assert(globalTest6, 'Test 9: global');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: global
 + PASS: Test 2: funk
 + PASS: Test 3: global
@@ -452,6 +694,31 @@ console.assert(globalTest6, 'Test 9: global');
 + PASS: Test 5: funk
 + PASS: Test 6: global
 + PASS: Test 7: global
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -459,11 +726,25 @@ console.assert(globalTest6, 'Test 9: global');
 
 let global = '.';
 
+<<<<<<< HEAD
 function funk(parameter) {
 	const local = `funky ${global}`;
 	global = `${global} ${global}`;
 	return `${parameter} ${local} ${global}`;
 }
+||||||| merged common ancestors
+function funk(parameter) {
+  const local = `funky ${global}`;
+  global = `${global} ${global}`;
+  return `${parameter} ${local} ${global}`;
+}
+=======
+const funk = (parameter) => {
+  const local = `funky ${global}`;
+  global = `${global} ${global}`;
+  return `${parameter} ${local} ${global}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');
@@ -505,6 +786,7 @@ console.assert(globalTest5, 'Test 7: global');
 > [review source](../../../exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1: global
 + PASS: Test 2: jazz
 + PASS: Test 3: global
@@ -512,6 +794,31 @@ console.assert(globalTest5, 'Test 7: global');
 + PASS: Test 5: jazz
 + PASS: Test 6: global
 + PASS: Test 7: global
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -519,11 +826,25 @@ console.assert(globalTest5, 'Test 7: global');
 
 let global = '.';
 
+<<<<<<< HEAD
 function jazz(parameter) {
 	const local = `jazzy ${global}`;
 	global = `#${global}`;
 	return `${parameter} ${local} ${global}`;
 }
+||||||| merged common ancestors
+function jazz(parameter) {
+  const local = `jazzy ${global}`;
+  global = `#${global}`;
+  return `${parameter} ${local} ${global}`;
+}
+=======
+const jazz = (parameter) => {
+  const local = `jazzy ${global}`;
+  global = `#${global}`;
+  return `${parameter} ${local} ${global}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');
@@ -582,15 +903,28 @@ console.assert(globalTest5, 'Test 7: global');
 
 // which of these are pure functions?
 
+<<<<<<< HEAD
 /*function a() {
+||||||| merged common ancestors
+function a() {
+=======
+const a = () => {
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
   return x + y;
+<<<<<<< HEAD
 }*/
 function a() {
 	let x = 1;
 	let y = 2;
 	return x + y;
 }
+||||||| merged common ancestors
+}
+=======
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 /*
 function b(y) {
 	result = x + y;
@@ -601,12 +935,36 @@ function b(y) {
 	let x = 1;
 	return x + y;
 }
+||||||| merged common ancestors
+function b(y) {
+  result = x + y;
+  return result;
+}
+=======
+const b = (y) => {
+  result = x + y;
+  return result;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 function c(y, x) {
 	const m = y - x; // just this function is pure
 	return x + m;
 }
+||||||| merged common ancestors
+function c(y, x) {
+  const m = y - x
+  return x + m;
+}
+=======
+const c = (y, x) => {
+  const m = y - x
+  return x + m;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 /*
 function d(x, y) {
 	const a = 'hi';
@@ -618,7 +976,19 @@ function d(x, y) {
 	return x + y + a;
 }
 /*
+||||||| merged common ancestors
+function d(x, y) {
+  const a = 'hi';
+  return x + y + z;
+}
+=======
+const d = (x, y) => {
+  const a = 'hi';
+  return x + y + z;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 function e(x, y) {
 	p += z;
 	return z + y;
@@ -629,6 +999,21 @@ function e(x, y) {
 	p += x;
 	return p + y;
 }
+||||||| merged common ancestors
+function e(x, y) {
+  p += z;
+  return z + y;
+}
+=======
+const e = (x, y) => {
+  p += z;
+  return z + y;
+};
+
+const f = (p) => {
+  return p * 2;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 ```
 

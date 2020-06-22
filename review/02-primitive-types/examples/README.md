@@ -1,16 +1,23 @@
 # Debuggercises 
 
-## /exercises/02-primitive-types/examples 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
+
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[02-primitive-types](../README.md)/examples 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/boolean-undefined-null.js](#boolean-undefined-nulljs)  
 - [/number.js](#numberjs)  
 - [/string.js](#stringjs)  
 - [/typeof.js](#typeofjs)  
-
 ---
 
 ## /boolean-undefined-null.js 

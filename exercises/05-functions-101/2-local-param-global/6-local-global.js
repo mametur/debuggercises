@@ -2,11 +2,25 @@
 
 let global = 'turtle';
 
+<<<<<<< HEAD
 function jazz() {
 	const local = 'jazzy';
 	global = `${global}!`;
 	return `${global} ${local}`;
 }
+||||||| merged common ancestors
+function jazz() {
+  const local = 'jazzy'
+  global = `${global}!`;
+  return `${global} ${local}`;
+}
+=======
+const jazz = () => {
+  const local = 'jazzy'
+  global = `${global}!`;
+  return `${global} ${local}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === 'turtle! jazzy';

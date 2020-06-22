@@ -1,16 +1,23 @@
 # Debuggercises 
 
-## /exercises/04-value-swaps/example-swap-in-steps 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
+
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-setup.js](#0-setupjs) - _error_ 
 - [/1-store-y.js](#1-store-yjs) - _error_ 
 - [/2-reassign-a.js](#2-reassign-ajs) - _error_ 
 - [/3-use-stored-y.js](#3-use-stored-yjs) - _pass_ 
-
 ---
 
 ## /0-setup.js 
@@ -35,6 +42,9 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 
 ```js
 'use strict';
+
+// this file shows the initial swap exercise
+//  before you have written any code
 
 // declare & assign variables
 let a = "y";
@@ -83,6 +93,8 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
 
 ```js
 'use strict';
+
+// this file shows the first line of code to write
 
 // declare & assign variables
 let a = "y";
@@ -134,6 +146,8 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 2
 ```js
 'use strict';
 
+// this file shows the second line of code to write
+
 // declare & assign variables
 let a = "y";
 let b = "x";
@@ -175,6 +189,8 @@ console.assert(isTrue3, "Test 3");
 
 ```js
 'use strict';
+
+// this file shows the final line of code, with all tests passing
 
 // declare & assign variables
 let a = "y";

@@ -5,6 +5,7 @@
    Number
    ===
 */
+<<<<<<< HEAD
 function mystery(x, y) {
 	if (Number(x) === Number(y)) {
 		return true;
@@ -12,6 +13,15 @@ function mystery(x, y) {
 		return false;
 	}
 }
+||||||| merged common ancestors
+function mystery(x, y) {
+
+}
+=======
+const mystery = (x, y) => {
+
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // all of the test cases are correct
 

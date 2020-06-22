@@ -1,17 +1,40 @@
 # Debuggercises 
 
-## /exercises/01-variables/exercises 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
 
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[01-variables](../README.md)/exercises 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+
+<<<<<<< HEAD
 - [/1-let.js](#1-letjs)  
 - [/2-let.js](#2-letjs)  
 - [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs)  
 - [/5-let-or-const.js](#5-let-or-constjs)  
 
+||||||| merged common ancestors
+- [/1-let.js](#1-letjs) - _incomplete_ 
+- [/2-let.js](#2-letjs) - _incomplete_ 
+- [/3-let-or-const.js](#3-let-or-constjs) - _incomplete_ 
+- [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
+- [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
+
+=======
+- [/1-let.js](#1-letjs) - _incomplete_ 
+- [/2-let.js](#2-letjs) - _incomplete_ 
+- [/3-let-or-const.js](#3-let-or-constjs) - _incomplete_ 
+- [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
+- [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ---
 
 ## /1-let.js 
@@ -21,11 +44,37 @@
 > [review source](../../../exercises/01-variables/exercises/1-let.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: c
 LOG: bc
 LOG: bcd
 LOG: abcd
 LOG: abcde
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/1-let.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/1-let.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -65,9 +114,35 @@ console.log(firstFiveLetters); // should log "abcde"
 > [review source](../../../exercises/01-variables/exercises/2-let.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: chocolate cake
 LOG: chocolate cake with frosting
 LOG: chocolate cake with frosting and banana
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/2-let.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/2-let.js:12:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -104,6 +179,7 @@ console.log(desert); // should log 'chocolate cake with frosting and banana'
 > [review source](../../../exercises/01-variables/exercises/3-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: undefined
 LOG: birch
 LOG: myrtle
@@ -112,6 +188,31 @@ LOG: blue
 LOG: myrtle
 LOG: oak
 LOG: orange
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/3-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/3-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -176,6 +277,7 @@ console.log(aColor);
 > [review source](../../../exercises/01-variables/exercises/4-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: a
 LOG: b
 LOG: a
@@ -184,6 +286,31 @@ LOG: b
 LOG: c
 LOG: bd
 LOG: a
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/4-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/4-let-or-const.js:19:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -238,6 +365,7 @@ console.log(x); // should print 'a'
 > [review source](../../../exercises/01-variables/exercises/5-let-or-const.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: chair
 LOG: house
 LOG: table
@@ -246,6 +374,31 @@ LOG: apple
 LOG: house
 LOG: table
 LOG: apple, pear
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/5-let-or-const.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js

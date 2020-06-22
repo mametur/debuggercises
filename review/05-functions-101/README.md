@@ -1,10 +1,18 @@
 # Debuggercises 
 
-## /exercises/05-functions-101 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
+
+[../README.md](../README.md)
+=======
+## [exercises](../README.md)/05-functions-101 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-examples](./0-examples/README.md)
   - [/1-declaration-vs-execution.js](./0-examples/README.md#1-declaration-vs-executionjs)  
@@ -27,4 +35,3 @@
   - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
   - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _pass_ 
   - [/extra-pure-functions.js](./2-local-param-global/README.md#extra-pure-functionsjs)  
-

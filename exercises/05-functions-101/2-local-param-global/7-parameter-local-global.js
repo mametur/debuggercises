@@ -2,11 +2,25 @@
 
 let global = '.';
 
+<<<<<<< HEAD
 function funk(parameter) {
 	const local = `funky ${global}`;
 	global = `${global} ${global}`;
 	return `${parameter} ${local} ${global}`;
 }
+||||||| merged common ancestors
+function funk(parameter) {
+  const local = `funky ${global}`;
+  global = `${global} ${global}`;
+  return `${parameter} ${local} ${global}`;
+}
+=======
+const funk = (parameter) => {
+  const local = `funky ${global}`;
+  global = `${global} ${global}`;
+  return `${parameter} ${local} ${global}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const globalTest1 = global === '.';
 console.assert(globalTest1, 'Test 1: global');
