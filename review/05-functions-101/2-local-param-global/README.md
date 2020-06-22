@@ -1,28 +1,18 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-example.js](#0-examplejs)  
-- [/1-parameter-local.js](#1-parameter-localjs) - _pass_ 
-- [/2-parameter-global.js](#2-parameter-globaljs) - _pass_ 
-- [/3-parameter-global.js](#3-parameter-globaljs) - _pass_ 
-- [/5-local-global.js](#5-local-globaljs) - _pass_ 
-- [/6-local-global.js](#6-local-globaljs) - _pass_ 
-- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _pass_ 
-- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _pass_ 
-- [/extra-pure-functions.js](#extra-pure-functionsjs)  
+- [/1-parameter-local.js](#1-parameter-localjs) - _error (syntax)_ 
+- [/2-parameter-global.js](#2-parameter-globaljs) - _error (syntax)_ 
+- [/3-parameter-global.js](#3-parameter-globaljs) - _error (syntax)_ 
+- [/5-local-global.js](#5-local-globaljs) - _error (syntax)_ 
+- [/6-local-global.js](#6-local-globaljs) - _error (syntax)_ 
+- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _error (syntax)_ 
+- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _error (syntax)_ 
+- [/extra-pure-functions.js](#extra-pure-functionsjs) - _error (syntax)_ 
 ---
 
 ## /0-example.js 
@@ -150,43 +140,26 @@ console.log('global2:', global2);
 
 ## /1-parameter-local.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/1-parameter-local.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:3
 <<<<<<< HEAD
-+ PASS: Test 1: funk
-+ PASS: Test 2: funk
-+ PASS: Test 3: funk
-+ PASS: Test 1: jazz
-+ PASS: Test 2: jazz
-+ PASS: Test 3: jazz
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -286,40 +259,26 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ## /2-parameter-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/2-parameter-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:14
 <<<<<<< HEAD
-+ PASS: Test 1: funk
-+ PASS: Test 2: funk
-+ PASS: Test 3: funk
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -377,40 +336,26 @@ console.assert(funk3, 'Test 3: funk');
 
 ## /3-parameter-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/3-parameter-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:5
 <<<<<<< HEAD
-+ PASS: Test 1: jazz
-+ PASS: Test 2: jazz
-+ PASS: Test 3: jazz
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -459,46 +404,26 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ## /5-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:5
 <<<<<<< HEAD
-+ PASS: Test 1: funk
-+ PASS: Test 2: global
-+ PASS: Test 3: global
-+ PASS: Test 4: funk
-+ PASS: Test 5: global
-+ PASS: Test 6: global
-+ PASS: Test 7: funk
-+ PASS: Test 8: global
-+ PASS: Test 9: global
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -570,46 +495,26 @@ console.assert(globalTest6, 'Test 9: global');
 
 ## /6-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/6-local-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:5
 <<<<<<< HEAD
-+ PASS: Test 1: jazz
-+ PASS: Test 2: global
-+ PASS: Test 3: global
-+ PASS: Test 4: jazz
-+ PASS: Test 5: global
-+ PASS: Test 6: global
-+ PASS: Test 7: jazz
-+ PASS: Test 8: global
-+ PASS: Test 9: global
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -681,44 +586,26 @@ console.assert(globalTest6, 'Test 9: global');
 
 ## /7-parameter-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:5
 <<<<<<< HEAD
-+ PASS: Test 1: global
-+ PASS: Test 2: funk
-+ PASS: Test 3: global
-+ PASS: Test 4: global
-+ PASS: Test 5: funk
-+ PASS: Test 6: global
-+ PASS: Test 7: global
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -781,44 +668,26 @@ console.assert(globalTest5, 'Test 7: global');
 
 ## /8-prameter-local-global.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js)
 
 ```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:5
 <<<<<<< HEAD
-+ PASS: Test 1: global
-+ PASS: Test 2: jazz
-+ PASS: Test 3: global
-+ PASS: Test 4: global
-+ PASS: Test 5: jazz
-+ PASS: Test 6: global
-+ PASS: Test 7: global
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
@@ -881,9 +750,27 @@ console.assert(globalTest5, 'Test 7: global');
 
 ## /extra-pure-functions.js 
 
->  
+> error (syntax) 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/extra-pure-functions.js)
+
+```txt
+UNCAUGHT:   ...  /exercises/05-functions-101/2-local-param-global/extra-pure-functions.js:18
+<<<<<<< HEAD
+^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
+```
 
 ```js
 'use strict';

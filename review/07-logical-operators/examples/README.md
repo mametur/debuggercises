@@ -1,18 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/examples 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-truthiness.js](#0-truthinessjs)  
 - [/1-or.js](#1-orjs)  

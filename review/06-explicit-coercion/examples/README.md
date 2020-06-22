@@ -1,31 +1,13 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/examples 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/1-string.js](#1-stringjs)  
 - [/2-boolean.js](#2-booleanjs)  
 - [/3-number.js](#3-numberjs)  
-<<<<<<< HEAD
 - [/4-about-nan.js](#4-about-nanjs) - _error_ 
-
-||||||| merged common ancestors
-- [/4-about-nan.js](#4-about-nanjs) - _fail_ 
-
-=======
-- [/4-about-nan.js](#4-about-nanjs) - _fail_ 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ---
 
 ## /1-string.js 

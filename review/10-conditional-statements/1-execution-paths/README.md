@@ -1,84 +1,42 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
 
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
-- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
-- [/3-write-function.js](#3-write-functionjs) - _pass_ 
-
-||||||| merged common ancestors
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _fail_ 
-- [/3-write-function.js](#3-write-functionjs) - _incomplete_ 
-
-=======
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _error (syntax)_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-arguments.js](#3-write-argumentsjs) - _fail_ 
-- [/4-write-function.js](#4-write-functionjs) - _incomplete_ 
-- [/5-write-function.js](#5-write-functionjs) - _fail_ 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+- [/3-write-arguments.js](#3-write-argumentsjs) - _error (syntax)_ 
+- [/4-write-function.js](#4-write-functionjs) - _error (syntax)_ 
+- [/5-write-function.js](#5-write-functionjs) - _error_ 
 ---
 
 ## /1-write-expected.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/1-write-expected.js)
 
 ```txt
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
-+ PASS: Test 6
-+ PASS: Test 7
-+ PASS: Test 8
-+ PASS: Test 9
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/1-write-expected.js:14:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/1-write-expected.js:14:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/1-write-expected.js:1
+(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/1-write-expected.js
+                                                              ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
+<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/1-write-expected.js
 function mystery(a, b) {
 	let result = '';
 	if (a && b) {
@@ -115,7 +73,7 @@ const mystery = (a, b) => {
   }
   return result;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/1-write-expected.js
 
 const _1_expect = 'path 2';
 const _1_actual = mystery(0, null); // Boolean(0,null) is false
@@ -161,11 +119,6 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
-> pass 
-||||||| merged common ancestors
-> fail 
-=======
 > incomplete 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/2-write-arguments.js)
@@ -173,15 +126,15 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/2-write-arguments.js:15:27)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
 ```
 
 ```js
@@ -244,24 +197,30 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-arguments.js 
 
-> fail 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+> error (syntax) 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js)
 
 ```txt
-+ PASS: Test 1
-+ PASS: Test 2
-+ PASS: Test 3
-+ PASS: Test 4
-+ PASS: Test 5
-+ PASS: Test 6
-+ PASS: Test 7
-+ PASS: Test 8
+UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js:1
+(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/2-write-arguments.js
+                                                              ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
+<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/2-write-arguments.js
 function mystery(a, b) {
 	let result = '';
 	if (typeof a === 'number') {
@@ -315,7 +274,7 @@ const mystery = (a, b) => {
   }
   return result;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js
 
 // path 1
 const _1_expect = 'path 1';
@@ -361,53 +320,30 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 
 ## /4-write-function.js 
 
-> pass 
+> error (syntax) 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/4-write-function.js)
 
 ```txt
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
-+ PASS: Test 01
-+ PASS: Test 02
-+ PASS: Test 03
-+ PASS: Test 04
-+ PASS: Test 05
-+ PASS: Test 06
-+ PASS: Test 07
-+ PASS: Test 08
-+ PASS: Test 09
-+ PASS: Test 10
-+ PASS: Test 11
-+ PASS: Test 12
-||||||| merged common ancestors
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/09-conditionals/1-execution-paths/3-write-function.js:3:3)
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/3-write-function.js:17:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1) 
-=======
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:3:3)
-    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:17:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:1
+(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/3-write-function.js
+                                                              ^^
+
+SyntaxError: Unexpected token <<
+    at createScript (vm.js:80:10)
+    at Object.runInThisContext (vm.js:139:10)
+    at Module._compile (module.js:616:28)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js
-<<<<<<< HEAD:review/09-conditionals/1-execution-paths/README.md
+<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/3-write-function.js
 function mystery(a, b) {
 	let result = '';
 	if (a && b) {
@@ -449,7 +385,7 @@ const mystery = (a, b) => {
   }
   return result;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:review/10-conditional-statements/1-execution-paths/README.md
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/4-write-function.js
 
 // path 1
 const _01_expect = 'path 1';
@@ -511,20 +447,22 @@ console.assert(_12_actual === _12_expect, 'Test 12');
 
 ## /5-write-function.js 
 
-> fail 
+> error 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/5-write-function.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
+    at Console.assert (console.js:194:23)
+    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
+    at Object.<anonymous> (  ...  /exercises/10-conditional-statements/1-execution-paths/5-write-function.js:8:9)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Module.require (module.js:596:17)
+    at require (internal/module.js:11:18) 
 ```
 
 ```js

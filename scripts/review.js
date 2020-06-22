@@ -78,7 +78,6 @@ process.on('exit', (exitCode) => {
 		// write the new markdown files!
 		index.reviewPath = index.reviewPath;
 
-		// https://geedew.com/remove-a-directory-that-is-not-empty-in-nodejs/
 		const deleteFolderRecursive = function (pathToDelete) {
 			if (fs.existsSync(pathToDelete)) {
 				const files = fs.readdirSync(pathToDelete);
@@ -93,10 +92,12 @@ process.on('exit', (exitCode) => {
 				fs.rmdirSync(pathToDelete);
 			}
 		};
-		const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
+		const absReviewPath = path.normalize(path.join(PARENT_DIR, index.config.reviewPath));
 		deleteFolderRecursive(absReviewPath);
 
-		reviewify.writeReviews(index, PARENT_DIR);
+		// console.log(JSON.stringify(index, null, '  '))
+
+		reviewify.writeReviews(index, absReviewPath);
 
 		// done!
 		nativeConsole.log(`exiting with code: ${exitCode}`);

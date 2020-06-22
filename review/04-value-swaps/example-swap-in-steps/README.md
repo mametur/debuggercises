@@ -1,18 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-setup.js](#0-setupjs) - _error_ 
 - [/1-store-y.js](#1-store-yjs) - _error_ 
@@ -30,7 +20,7 @@
 UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
     at Console.assert (console.js:194:23)
     at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/0-setup.js:14:9)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/0-setup.js:17:9)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
     at Module.load (module.js:565:32)
@@ -81,7 +71,7 @@ console.assert(isTrue3, "Test 3");
 UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
     at Console.assert (console.js:194:23)
     at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/1-store-y.js:15:9)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/1-store-y.js:17:9)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
     at Module.load (module.js:565:32)
@@ -133,7 +123,7 @@ console.assert(isTrue3, "Test 3");
 UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 2
     at Console.assert (console.js:194:23)
     at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js:19:9)
+    at Object.<anonymous> (  ...  /exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js:21:9)
     at Module._compile (module.js:652:30)
     at Object.Module._extensions..js (module.js:663:10)
     at Module.load (module.js:565:32)

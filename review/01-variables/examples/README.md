@@ -1,30 +1,12 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/1-declaration-assignment-reassignment.js](#1-declaration-assignment-reassignmentjs)  
 - [/2-reusing-variables.js](#2-reusing-variablesjs)  
-<<<<<<< HEAD
 - [/3-const-vs-let.js](#3-const-vs-letjs) - _error (syntax)_ 
-
-||||||| merged common ancestors
-- [/3-const-vs-let.js](#3-const-vs-letjs) - _error_ 
-
-=======
-- [/3-const-vs-let.js](#3-const-vs-letjs) - _error_ 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ---
 
 ## /1-declaration-assignment-reassignment.js 
@@ -114,7 +96,6 @@ console.log(furniture);
 > [review source](../../../exercises/01-variables/examples/3-const-vs-let.js)
 
 ```txt
-<<<<<<< HEAD
 UNCAUGHT:   ...  /exercises/01-variables/examples/3-const-vs-let.js:12
 const constantVariable1;
       ^^^^^^^^^^^^^^^^^
@@ -129,32 +110,7 @@ SyntaxError: Missing initializer in const declaration
     at Function.Module._load (module.js:497:3)
     at Module.require (module.js:596:17)
     at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
-||||||| merged common ancestors
-UNCAUGHT: TypeError: Assignment to constant variable.
-    at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
-=======
-UNCAUGHT: TypeError: Assignment to constant variable.
-    at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
 ```
 
 ```js

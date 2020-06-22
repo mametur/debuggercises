@@ -1,18 +1,8 @@
 # Debuggercises 
 
-> 6/21/2020, 9:05:10 AM 
+> 6/22/2020, 12:32:03 PM 
 
-<<<<<<< HEAD
-> 6/21/2020, 8:59:36 PM 
-
-[../README.md](../README.md)
-||||||| merged common ancestors
-> 6/16/2020, 11:22:08 AM 
-
-[../README.md](../README.md)
-=======
 ## [exercises](../README.md)/05-functions-101 
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 - [/0-examples](./0-examples/README.md)
   - [/1-declaration-vs-execution.js](./0-examples/README.md#1-declaration-vs-executionjs)  
@@ -22,16 +12,16 @@
   - [/5-scope.js](./0-examples/README.md#5-scopejs)  
   - [/6-test-cases.js](./0-examples/README.md#6-test-casesjs) - _pass_ 
 - [/1-scrambles](./1-scrambles/README.md)
-  - [/1-write-expected.js](./1-scrambles/README.md#1-write-expectedjs) - _pass_ 
-  - [/2-write-arguments.js](./1-scrambles/README.md#2-write-argumentsjs) - _pass_ 
-  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _pass_ 
+  - [/1-write-expected.js](./1-scrambles/README.md#1-write-expectedjs) - _error (syntax)_ 
+  - [/2-write-arguments.js](./1-scrambles/README.md#2-write-argumentsjs) - _error (syntax)_ 
+  - [/3-write-function.js](./1-scrambles/README.md#3-write-functionjs) - _error (syntax)_ 
 - [/2-local-param-global](./2-local-param-global/README.md)
   - [/0-example.js](./2-local-param-global/README.md#0-examplejs)  
-  - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
-  - [/2-parameter-global.js](./2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
-  - [/3-parameter-global.js](./2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
-  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _pass_ 
-  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _pass_ 
-  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
-  - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _pass_ 
-  - [/extra-pure-functions.js](./2-local-param-global/README.md#extra-pure-functionsjs)  
+  - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _error (syntax)_ 
+  - [/2-parameter-global.js](./2-local-param-global/README.md#2-parameter-globaljs) - _error (syntax)_ 
+  - [/3-parameter-global.js](./2-local-param-global/README.md#3-parameter-globaljs) - _error (syntax)_ 
+  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _error (syntax)_ 
+  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _error (syntax)_ 
+  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _error (syntax)_ 
+  - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _error (syntax)_ 
+  - [/extra-pure-functions.js](./2-local-param-global/README.md#extra-pure-functionsjs) - _error (syntax)_ 
