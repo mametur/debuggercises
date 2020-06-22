@@ -1,70 +1,44 @@
 # Debuggercises 
 
-> 6/22/2020, 12:32:03 PM 
+> 6/22/2020, 12:46:13 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _error (syntax)_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _error (syntax)_ 
-- [/3-write-function.js](#3-write-functionjs) - _error (syntax)_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 ---
 
 ## /1-write-expected.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/1-write-expected.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:3
-<<<<<<< HEAD
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
 'use strict';
 
-<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'boolean') {
 		throw new TypeError('x cannot be a boolean');
 	}
-||||||| merged common ancestors
-function mystery(x) {
-  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
-=======
-const mystery = (x) => {
-  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
-<<<<<<< HEAD
 	const booleaned = Boolean(x);
 	const numbered = Number(booleaned);
 	return numbered;
 }
-||||||| merged common ancestors
-  const booleaned = Boolean(x);
-  const numbered = Number(booleaned);
-  return numbered;
-}
-=======
-  const booleaned = Boolean(x);
-  const numbered = Number(booleaned);
-  return numbered;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // write the expected return value
 
@@ -96,16 +70,8 @@ const _7_expect = 1;
 const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-<<<<<<< HEAD
 const _8_expect = 1;
 const _8_actual = mystery('true');
-||||||| merged common ancestors
-const _8_expect = _;
-const _8_actual = mystery(true);
-=======
-const _8_expect = _;
-const _8_actual = mystery('true');
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 1;
@@ -120,60 +86,34 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/2-write-arguments.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:3
-<<<<<<< HEAD
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
 'use strict';
 
-<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'string') {
 		throw new TypeError('x cannot be a string');
 	}
-||||||| merged common ancestors
-function mystery(x) {
-  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
-=======
-const mystery = (x) => {
-  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
-<<<<<<< HEAD
 	const stringed = String(x);
 	const numbered = Number(stringed);
 	return numbered;
 }
-||||||| merged common ancestors
-  const stringed = String(x);
-  const numbered = Number(stringed);
-  return numbered;
-}
-=======
-  const stringed = String(x);
-  const numbered = Number(stringed);
-  return numbered;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // find an argument to get the expected return value
 
@@ -221,26 +161,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /3-write-function.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/3-write-function.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/06-explicit-coercion/exercises/3-write-function.js:8
-<<<<<<< HEAD
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -251,7 +185,6 @@ SyntaxError: Unexpected token <<
    Number
    ===
 */
-<<<<<<< HEAD
 function mystery(x, y) {
 	if (Number(x) === Number(y)) {
 		return true;
@@ -259,15 +192,6 @@ function mystery(x, y) {
 		return false;
 	}
 }
-||||||| merged common ancestors
-function mystery(x, y) {
-
-}
-=======
-const mystery = (x, y) => {
-
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // all of the test cases are correct
 

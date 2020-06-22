@@ -1,42 +1,35 @@
 # Debuggercises 
 
-> 6/22/2020, 12:32:03 PM 
+> 6/22/2020, 12:46:13 PM 
 
 ## [exercises](../../README.md)/[10-conditional-statements](../README.md)/1-execution-paths 
 
-- [/1-write-expected.js](#1-write-expectedjs) - _error (syntax)_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-arguments.js](#3-write-argumentsjs) - _error (syntax)_ 
-- [/4-write-function.js](#4-write-functionjs) - _error (syntax)_ 
+- [/3-write-arguments.js](#3-write-argumentsjs) - _pass_ 
+- [/4-write-function.js](#4-write-functionjs) - _pass_ 
 - [/5-write-function.js](#5-write-functionjs) - _error_ 
 ---
 
 ## /1-write-expected.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/1-write-expected.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/1-write-expected.js:1
-(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/1-write-expected.js
-                                                              ^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
-<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/1-write-expected.js
 function mystery(a, b) {
 	let result = '';
 	if (a && b) {
@@ -49,31 +42,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (a && b) {
-    result = 'path 1';
-  } else if (!a && !b) {
-    result = 'path 2';
-  } else {
-    result = 'path 3';
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (a && b) {
-    result = 'path 1';
-  } else if (!a && !b) {
-    result = 'path 2';
-  } else {
-    result = 'path 3';
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/1-write-expected.js
 
 const _1_expect = 'path 2';
 const _1_actual = mystery(0, null); // Boolean(0,null) is false
@@ -197,30 +165,22 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-write-arguments.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js:1
-(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/2-write-arguments.js
-                                                              ^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
 ```
 
 ```js
-<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/2-write-arguments.js
 function mystery(a, b) {
 	let result = '';
 	if (typeof a === 'number') {
@@ -238,43 +198,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (typeof a === 'number') {
-    if (typeof b === 'number') {
-      result = 'path 1';
-    } else {
-      result = 'path 2';
-    }
-  } else {
-    if (typeof a === typeof b) {
-      result = 'path 3';
-    } else {
-      result = 'path 4';
-    }
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (typeof a === 'number') {
-    if (typeof b === 'number') {
-      result = 'path 1';
-    } else {
-      result = 'path 2';
-    }
-  } else {
-    if (typeof a === typeof b) {
-      result = 'path 3';
-    } else {
-      result = 'path 4';
-    }
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/3-write-arguments.js
 
 // path 1
 const _1_expect = 'path 1';
@@ -320,30 +243,26 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 
 ## /4-write-function.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/10-conditional-statements/1-execution-paths/4-write-function.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/10-conditional-statements/1-execution-paths/4-write-function.js:1
-(function (exports, require, module, __filename, __dirname) { <<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/3-write-function.js
-                                                              ^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 01
++ PASS: Test 02
++ PASS: Test 03
++ PASS: Test 04
++ PASS: Test 05
++ PASS: Test 06
++ PASS: Test 07
++ PASS: Test 08
++ PASS: Test 09
++ PASS: Test 10
++ PASS: Test 11
++ PASS: Test 12
 ```
 
 ```js
-<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/3-write-function.js
 function mystery(a, b) {
 	let result = '';
 	if (a && b) {
@@ -357,35 +276,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (_) {
-    result = 'path 1';
-  } else if (_) {
-    result = 'path 2';
-  } else if (_) {
-    result = 'path 3';
-  } else {
-    result = 'path 4';
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (_) {
-    result = 'path 1';
-  } else if (_) {
-    result = 'path 2';
-  } else if (_) {
-    result = 'path 3';
-  } else {
-    result = 'path 4';
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/4-write-function.js
 
 // path 1
 const _01_expect = 'path 1';
