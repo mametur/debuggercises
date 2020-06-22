@@ -1,15 +1,34 @@
 # Debuggercises 
 
-## /exercises/06-explicit-coercion/exercises 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
 
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+
+<<<<<<< HEAD
 - [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
 - [/3-write-function.js](#3-write-functionjs) - _pass_ 
 
+||||||| merged common ancestors
+- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
+- [/3-write-function.js](#3-write-functionjs) - _fail_ 
+
+=======
+- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
+- [/3-write-function.js](#3-write-functionjs) - _fail_ 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ---
 
 ## /1-write-expected.js 
@@ -19,6 +38,7 @@
 > [review source](../../../exercises/06-explicit-coercion/exercises/1-write-expected.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1
 + PASS: Test 2
 + PASS: Test 3
@@ -28,20 +48,65 @@
 + PASS: Test 7
 + PASS: Test 8
 + PASS: Test 9
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
 'use strict';
 
+<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'boolean') {
 		throw new TypeError('x cannot be a boolean');
 	}
+||||||| merged common ancestors
+function mystery(x) {
+  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
+=======
+const mystery = (x) => {
+  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 	const booleaned = Boolean(x);
 	const numbered = Number(booleaned);
 	return numbered;
 }
+||||||| merged common ancestors
+  const booleaned = Boolean(x);
+  const numbered = Number(booleaned);
+  return numbered;
+}
+=======
+  const booleaned = Boolean(x);
+  const numbered = Number(booleaned);
+  return numbered;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // write the expected return value
 
@@ -73,8 +138,16 @@ const _7_expect = 1;
 const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
+<<<<<<< HEAD
 const _8_expect = 1;
 const _8_actual = mystery('true');
+||||||| merged common ancestors
+const _8_expect = _;
+const _8_actual = mystery(true);
+=======
+const _8_expect = _;
+const _8_actual = mystery('true');
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 1;
@@ -94,6 +167,7 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 > [review source](../../../exercises/06-explicit-coercion/exercises/2-write-arguments.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Test 1
 + PASS: Test 2
 + PASS: Test 3
@@ -103,20 +177,65 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 + PASS: Test 7
 + PASS: Test 8
 + PASS: Test 9
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
 'use strict';
 
+<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'string') {
 		throw new TypeError('x cannot be a string');
 	}
+||||||| merged common ancestors
+function mystery(x) {
+  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
+=======
+const mystery = (x) => {
+  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
+<<<<<<< HEAD
 	const stringed = String(x);
 	const numbered = Number(stringed);
 	return numbered;
 }
+||||||| merged common ancestors
+  const stringed = String(x);
+  const numbered = Number(stringed);
+  return numbered;
+}
+=======
+  const stringed = String(x);
+  const numbered = Number(stringed);
+  return numbered;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // find an argument to get the expected return value
 
@@ -188,6 +307,7 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
    Number
    ===
 */
+<<<<<<< HEAD
 function mystery(x, y) {
 	if (Number(x) === Number(y)) {
 		return true;
@@ -195,6 +315,15 @@ function mystery(x, y) {
 		return false;
 	}
 }
+||||||| merged common ancestors
+function mystery(x, y) {
+
+}
+=======
+const mystery = (x, y) => {
+
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // all of the test cases are correct
 

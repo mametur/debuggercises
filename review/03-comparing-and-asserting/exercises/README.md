@@ -1,14 +1,31 @@
 # Debuggercises 
 
-## /exercises/03-comparing-and-asserting/exercises 
+> 6/21/2020, 9:05:10 AM 
 
+<<<<<<< HEAD
 > 6/21/2020, 8:59:36 PM 
 
 [../README.md](../README.md)
+||||||| merged common ancestors
+> 6/16/2020, 11:22:08 AM 
 
+[../README.md](../README.md)
+=======
+## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/exercises 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
+
+<<<<<<< HEAD
 - [/1.js](#1js) - _pass_ 
 - [/2.js](#2js) - _pass_ 
 
+||||||| merged common ancestors
+- [/1.js](#1js) - _incomplete_ 
+- [/2.js](#2js) - _incomplete_ 
+
+=======
+- [/1.js](#1js) - _incomplete_ 
+- [/2.js](#2js) - _incomplete_ 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ---
 
 ## /1.js 
@@ -18,6 +35,7 @@
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/1.js)
 
 ```txt
+<<<<<<< HEAD
 LOG: boolean  true
 + PASS: Assertion 1
 LOG: boolean  true
@@ -26,6 +44,31 @@ LOG: boolean  true
 + PASS: Assertion 3
 LOG: boolean  true
 + PASS: Assertion 4
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/1.js:5:26)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/1.js:5:26)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js
@@ -62,6 +105,7 @@ console.assert(isTrue4, 'Assertion 4');
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/2.js)
 
 ```txt
+<<<<<<< HEAD
 + PASS: Assertion 1
 + PASS: Assertion 2
 + PASS: Assertion 3
@@ -69,6 +113,31 @@ console.assert(isTrue4, 'Assertion 4');
 + PASS: Assertion 5
 + PASS: Assertion 6
 + PASS: Assertion 7
+||||||| merged common ancestors
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/2.js:6:33)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+=======
+UNCAUGHT: ReferenceError: _ is not defined
+    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/2.js:6:33)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 ```
 
 ```js

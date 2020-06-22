@@ -11,10 +11,22 @@
 
 let global = '';
 
+<<<<<<< HEAD
 function funk(parameter) {
 	global = `${global}funky`;
 	return `${global} ${parameter}`;
 }
+||||||| merged common ancestors
+function funk(parameter) {
+  global = `${global}funky`;
+  return `${global} ${parameter}`;
+}
+=======
+const funk = (parameter) => {
+  global = `${global}funky`;
+  return `${global} ${parameter}`;
+};
+>>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === 'funky hello';
