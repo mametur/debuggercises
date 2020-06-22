@@ -2,22 +2,10 @@
 
 let global = '<3';
 
-<<<<<<< HEAD
 function jazz(parameter) {
 	global = `${global} jazzy`;
 	return `${global} ${parameter}`;
 }
-||||||| merged common ancestors
-function jazz(parameter) {
-  global = `${global} jazzy`;
-  return `${global} ${parameter}`;
-}
-=======
-const jazz = (parameter) => {
-  global = `${global} jazzy`;
-  return `${global} ${parameter}`;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === '<3 jazzy hello';

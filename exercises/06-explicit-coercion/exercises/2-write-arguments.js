@@ -1,34 +1,14 @@
 'use strict';
 
-<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'string') {
 		throw new TypeError('x cannot be a string');
 	}
-||||||| merged common ancestors
-function mystery(x) {
-  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
-=======
-const mystery = (x) => {
-  if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
-<<<<<<< HEAD
 	const stringed = String(x);
 	const numbered = Number(stringed);
 	return numbered;
 }
-||||||| merged common ancestors
-  const stringed = String(x);
-  const numbered = Number(stringed);
-  return numbered;
-}
-=======
-  const stringed = String(x);
-  const numbered = Number(stringed);
-  return numbered;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // find an argument to get the expected return value
 

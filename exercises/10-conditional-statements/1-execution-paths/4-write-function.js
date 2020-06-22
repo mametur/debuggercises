@@ -1,4 +1,3 @@
-<<<<<<< HEAD:exercises/09-conditionals/1-execution-paths/3-write-function.js
 function mystery(a, b) {
 	let result = '';
 	if (a && b) {
@@ -12,35 +11,6 @@ function mystery(a, b) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function mystery(a, b) {
-  let result = '';
-  if (_) {
-    result = 'path 1';
-  } else if (_) {
-    result = 'path 2';
-  } else if (_) {
-    result = 'path 3';
-  } else {
-    result = 'path 4';
-  }
-  return result;
-}
-=======
-const mystery = (a, b) => {
-  let result = '';
-  if (_) {
-    result = 'path 1';
-  } else if (_) {
-    result = 'path 2';
-  } else if (_) {
-    result = 'path 3';
-  } else {
-    result = 'path 4';
-  }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/10-conditional-statements/1-execution-paths/4-write-function.js
 
 // path 1
 const _01_expect = 'path 1';

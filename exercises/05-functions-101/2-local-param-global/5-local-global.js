@@ -2,25 +2,11 @@
 
 let global = 'awesome';
 
-<<<<<<< HEAD
 function funk() {
 	const local = 'funky';
 	global = `#${global}`;
 	return `${local} ${global}`;
 }
-||||||| merged common ancestors
-function funk() {
-  const local = 'funky'
-  global = `#${global}`;
-  return `${local} ${global}`;
-}
-=======
-const funk = () => {
-  const local = 'funky'
-  global = `#${global}`;
-  return `${local} ${global}`;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === 'funky #awesome';

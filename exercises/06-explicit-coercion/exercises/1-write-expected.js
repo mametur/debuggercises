@@ -1,34 +1,14 @@
 'use strict';
 
-<<<<<<< HEAD
 function mystery(x) {
 	if (typeof x === 'boolean') {
 		throw new TypeError('x cannot be a boolean');
 	}
-||||||| merged common ancestors
-function mystery(x) {
-  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
-=======
-const mystery = (x) => {
-  if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
-<<<<<<< HEAD
 	const booleaned = Boolean(x);
 	const numbered = Number(booleaned);
 	return numbered;
 }
-||||||| merged common ancestors
-  const booleaned = Boolean(x);
-  const numbered = Number(booleaned);
-  return numbered;
-}
-=======
-  const booleaned = Boolean(x);
-  const numbered = Number(booleaned);
-  return numbered;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 
 // write the expected return value
 
@@ -60,16 +40,8 @@ const _7_expect = 1;
 const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-<<<<<<< HEAD
 const _8_expect = 1;
 const _8_actual = mystery('true');
-||||||| merged common ancestors
-const _8_expect = _;
-const _8_actual = mystery(true);
-=======
-const _8_expect = _;
-const _8_actual = mystery('true');
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = 1;
