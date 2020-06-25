@@ -20,20 +20,9 @@
  * @param {any} value - the value to check
  * @returns {string} - the type of the parameter
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-
-function findTheType(value) {
-	return value;
-}
-||||||| merged common ancestors
-function findTheType(value) {
-  return typeof value;
-}
-=======
 const findTheType = (value) => {
-  return typeof value;
+	return typeof value;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * adds two numbers together
@@ -41,19 +30,9 @@ const findTheType = (value) => {
  * @param {number} y
  * @returns {number} the sum of x and y
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function add(x, y) {
-	return x + y;
-}
-||||||| merged common ancestors
-function add(x, y) {
-  return x + y
-}
-=======
 const add = (x, y) => {
-  return x + y
+	return x + y;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * compares the type and value of two parameters
@@ -61,35 +40,15 @@ const add = (x, y) => {
  * @param {any} b
  * @returns {boolean} result of the comparison
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function strictEqual(a, b) {
-	return a === b;
-}
-||||||| merged common ancestors
-function strictEqual(a, b) {
-  return a === b;
-}
-=======
 const strictEqual = (a, b) => {
-  return a === b;
+	return a === b;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * returns a new string with all of the letters reversed
  * @param {string} str - the string to be reversed
  * @returns {string} a new string, the parameter backwards
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function reverseString(str) {
-	return str.split('').reverse().join('');
-}
-||||||| merged common ancestors
-function reverseString(str) {
-  return str.split('').reverse().join('');
-}
-=======
 const reverseString = (str) => {
-  return str.split('').reverse().join('');
+	return str.split('').reverse().join('');
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js

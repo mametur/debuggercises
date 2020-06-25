@@ -10,7 +10,6 @@
  * @param {number} y
  * @returns {number} the sum of x and y
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js
 function add(x, y) {
 	if (typeof x !== 'number') {
 		throw new TypeError();
@@ -26,27 +25,6 @@ function add(x, y) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function add(x, y) {
-  if (typeof x !== 'number') { throw new TypeError(); }
-  if (typeof y !== 'number') { throw new TypeError(); }
-
-  const result = x + y;
-
-  if (typeof result !== 'number') { throw new TypeError(); }
-  return result;
-}
-=======
-const add = (x, y) => {
-  if (typeof x !== 'number') { throw new TypeError('x'); }
-  if (typeof y !== 'number') { throw new TypeError('y'); }
-
-  const result = x + y;
-
-  if (typeof result !== 'number') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/1-write-tests.js
 
 const _1_expect = 1;
 const _1_actual = add(1, 0);

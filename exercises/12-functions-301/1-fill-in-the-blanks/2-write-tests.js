@@ -9,34 +9,16 @@
  * @param {any} b
  * @returns {boolean} result of the comparison
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js
 function strictEqual(a, b) {
 	// no need to check a or b, they can be any type
-||||||| merged common ancestors
-function strictEqual(a, b) {
-  // no need to check a or b, they can be any type
-=======
-const strictEqual = (a, b) => {
-  // no need to check a or b, they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js
 
 	const result = a === b;
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js
 
 const _1_expect = false;
 const _1_actual = strictEqual(NaN, NaN);

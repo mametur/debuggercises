@@ -8,34 +8,16 @@
  * @param {any} b
  * @returns {boolean}
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js
 function sameTruthiness(a, b) {
 	// no need to check a or b, they can be any type
-||||||| merged common ancestors
-function sameTruthiness(a, b) {
-  // no need to check a or b, they can be any type
-=======
-const sameTruthiness = (a, b) => {
-  // no need to check a or b, they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js
 
 	const result = Boolean(a) === Boolean(b);
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js
 
 const _1_expect = false;
 const _1_actual = sameTruthiness(1, 0);

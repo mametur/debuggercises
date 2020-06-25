@@ -8,34 +8,16 @@
  * @param {any} a
  * @returns {boolean}
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js
 function mystery(a) {
 	// no need to check a , they can be any type
-||||||| merged common ancestors
-function mystery(a) {
-  // no need to check a , they can be any type
-=======
-const mystery = (a) => {
-  // no need to check a , they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js
 
 	const result = Number.isNaN(Number(a));
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js
 
 const _1_expect = false;
 const _1_actual = mystery('1');
