@@ -6,21 +6,32 @@
  * @returns {number}
  */
 const mystery = (x) => {
-  if (typeof x !== 'number') { throw new TypeError('x'); }
+	if (typeof x !== 'number') {
+		throw new TypeError('x');
+	}
 
-  let result = 0;
+	let result = 0;
+	/*
   for (let i = 0; i !== Math.abs(x); i++) {
     if (x > 0) {
       result += 1;
     } else {
       result += -1;
     }
-  }
+  }*/
+	while (result !== x) {
+		if (x > 0) {
+			result++;
+		} else {
+			result--;
+		}
+	}
 
-  if (typeof result !== 'number') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'number') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 const _1_actual = mystery(-4);
 const _1_expect = -4;

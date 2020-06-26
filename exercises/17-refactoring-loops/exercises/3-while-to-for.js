@@ -11,19 +11,25 @@
  * @returns {number}
  */
 const mystery = (x) => {
-  if (typeof x !== 'number') { throw new TypeError('x'); }
+	if (typeof x !== 'number') {
+		throw new TypeError('x');
+	}
 
-  let result = 0;
-  let i = 0;
+	let result = 0;
+	/*let i = 0;
   while (i !== x) {
     result += i;
     i += 2;
-  }
+  }*/
+	for (let i = 0; i < x; i += 2) {
+		result += i;
+	}
 
-  if (typeof result !== 'number') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'number') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 const _1_expect = 0;
 const _1_actual = mystery(0);
@@ -48,4 +54,3 @@ console.assert(_5_actual === _5_expect, 'Test  5');
 const _6_expect = 0;
 const _6_actual = mystery(2);
 console.assert(_6_actual === _6_expect, 'Test  6');
-
