@@ -7,9 +7,13 @@
  * @param {any} b
  * @returns {any}
  */
+/*
 const mystery = (a, b) => (Boolean(a) !== Boolean(b))
   || b ? a && b : !b && !a;
-
+*/
+const mystery = (a, b) => {
+	return Boolean(a) !== Boolean(b) || b ? a && b : !b && !a;
+};
 
 const _1_arg1 = 1;
 const _1_arg2 = 1;
@@ -46,4 +50,3 @@ const _6_arg2 = 0;
 const _6_expect = 0;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(_6_actual === _6_expect, 'Test 6');
-

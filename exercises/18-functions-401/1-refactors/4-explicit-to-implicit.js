@@ -7,11 +7,12 @@
  * @param {any} b
  * @returns {string}
  */
+/*
 const mystery = (a, b) => {
   const result = String(a) || String(b);
   return result;
-};
-
+};*/
+const mystery = (a, b) => String(a) || String(b);
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';
@@ -48,4 +49,3 @@ const _6_arg2 = NaN;
 const _6_expect = 'Infinity';
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
-

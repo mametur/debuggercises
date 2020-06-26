@@ -7,12 +7,12 @@
  * @param {any} b
  * @returns {number}
  */
-const mystery = (a, b) => {
+/*const mystery = (a, b) => {
   const result = Number(typeof a === typeof b)
     && (a > b) ? Number(a) : Number(b);
   return result;
-};
-
+};*/
+const mystery = (a, b) => (Number(typeof a === typeof b) && a > b ? Number(a) : Number(b));
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';
@@ -49,4 +49,3 @@ const _6_arg2 = NaN;
 const _6_expect = NaN;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
-

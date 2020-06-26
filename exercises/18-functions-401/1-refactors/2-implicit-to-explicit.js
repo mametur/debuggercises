@@ -7,10 +7,15 @@
  * @param {any} b
  * @returns {boolean}
  */
+/*
 const mystery = (a, b) => typeof a !== b
   || !b
   && (Number.isNaN(b) || isNaN(a));
+*/
 
+const mystery = (a, b) => {
+	return typeof a !== b || (!b && (Number.isNaN(b) || isNaN(a)));
+};
 
 const _1_arg1 = 1;
 const _1_arg2 = 'number';
@@ -47,4 +52,3 @@ const _6_arg2 = 0;
 const _6_expect = true;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(_6_actual === _6_expect, 'Test 6');
-
