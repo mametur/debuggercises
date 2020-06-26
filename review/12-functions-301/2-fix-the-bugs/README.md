@@ -1,32 +1,27 @@
 # Debuggercises 
 
-> 6/22/2020, 6:43:11 PM 
+> 6/26/2020, 9:10:39 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/2-fix-the-bugs 
 
-- [/1.js](#1js) - _error_ 
-- [/2.js](#2js) - _error_ 
-- [/3.js](#3js) - _error_ 
+- [/1.js](#1js) - _pass_ 
+- [/2.js](#2js) - _pass_ 
+- [/3.js](#3js) - _pass_ 
 ---
 
 ## /1.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/1.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/1.js:33:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -43,20 +38,25 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
  * @returns {string}
  */
 const areNotSameLength = (num1, num2) => {
-  if (typeof num1 !== 'number') { throw new TypeError('num1'); }
-  if (typeof num2 !== 'number') { throw new TypeError('num2'); }
+	if (typeof num1 !== 'number') {
+		throw new TypeError('num1');
+	}
+	if (typeof num2 !== 'number') {
+		throw new TypeError('num2');
+	}
 
-  const result = 'the same';
-  if (num1 = num2) {
-    result === `are {result}`;
-  } else {
-    result === "aren't ${result}";
-  }
+	let result = 'the same';
+	if (num1 === num2) {
+		result = `are ${result}`;
+	} else {
+		result = `aren't ${result}`;
+	}
 
-  if (typeof result !== 'string') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 // all of the tests are correct, there are not bugs below here!
 
@@ -92,22 +92,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /2.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/2.js)
 
 ```txt
-UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
-    at areNotSameLength (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:18:19)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/2.js:32:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -124,20 +119,25 @@ UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
  * @returns {boolean}
  */
 const areNotSameLength = (str1, str2) => {
-  if (typeof str1 !== 'string') { throw new TypeError('str1'); }
-  if (typeof str2 !== 'string') { throw new TypeError('str2'); }
+	if (typeof str1 !== 'string') {
+		throw new TypeError('str1');
+	}
+	if (typeof str2 !== 'string') {
+		throw new TypeError('str2');
+	}
 
-  let result;
-  if (str1.Length = str2.Length) {
-    result = result + true;
-  } else {
-    result = result + false;
-  }
+	let result;
+	if (str1.length === str2.length) {
+		result = false;
+	} else {
+		result = true;
+	}
 
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'boolean') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 // all of the tests are correct, there are not bugs below here!
 
@@ -173,22 +173,17 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 
 ## /3.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/2-fix-the-bugs/3.js)
 
 ```txt
-UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
-    at Console.assert (console.js:194:23)
-    at Console.assert (  ...  /scripts/lib/console-catcher.js:13:21)
-    at Object.<anonymous> (  ...  /exercises/12-functions-301/2-fix-the-bugs/3.js:36:9)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -206,22 +201,27 @@ UNCAUGHT: AssertionError [ERR_ASSERTION]: Test 1
  * @returns {string}
  */
 const longestOrBoth = (str1, str2) => {
-  if (typeof str1 !== 'string') { throw new TypeError('str1'); }
-  if (typeof str2 !== 'string') { throw new TypeError('str2'); }
+	if (typeof str1 !== 'string') {
+		throw new TypeError('str1');
+	}
+	if (typeof str2 !== 'string') {
+		throw new TypeError('str2');
+	}
 
-  let result = '';
-  if (str1 >= str2) {
-    result === str1;
-  } if (str1 <= str2) {
-    result === str2;
-  } else {
-    result === `${str1}${str2}`;
-  }
+	let result = '';
+	if (str2.length > str1.length) {
+		result = str2;
+	} else if (str1.length > str2.length) {
+		result = str1;
+	} else {
+		result = `${str1}${str2}`;
+	}
 
-  if (typeof result !== 'string') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 // all of the tests are correct, there are not bugs below here!
 

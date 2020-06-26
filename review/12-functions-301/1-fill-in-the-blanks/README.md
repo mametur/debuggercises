@@ -1,37 +1,31 @@
 # Debuggercises 
 
-> 6/22/2020, 6:43:11 PM 
+> 6/26/2020, 9:10:39 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/1-fill-in-the-blanks 
 
-- [/1-write-tests.js](#1-write-testsjs) - _error (syntax)_ 
-- [/2-write-tests.js](#2-write-testsjs) - _error (syntax)_ 
-- [/3-pass-tests.js](#3-pass-testsjs) - _error (syntax)_ 
-- [/4-pass-tests.js](#4-pass-testsjs) - _error (syntax)_ 
+- [/1-write-tests.js](#1-write-testsjs) - _pass_ 
+- [/2-write-tests.js](#2-write-testsjs) - _pass_ 
+- [/3-pass-tests.js](#3-pass-testsjs) - _pass_ 
+- [/4-pass-tests.js](#4-pass-testsjs) - _pass_ 
 ---
 
 ## /1-write-tests.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/1-fill-in-the-blanks/1-write-tests.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/12-functions-301/1-fill-in-the-blanks/1-write-tests.js:13
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -47,7 +41,6 @@ SyntaxError: Unexpected token <<
  * @param {number} y
  * @returns {number} the sum of x and y
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/1-write-tests.js
 function add(x, y) {
 	if (typeof x !== 'number') {
 		throw new TypeError();
@@ -63,27 +56,6 @@ function add(x, y) {
 	}
 	return result;
 }
-||||||| merged common ancestors
-function add(x, y) {
-  if (typeof x !== 'number') { throw new TypeError(); }
-  if (typeof y !== 'number') { throw new TypeError(); }
-
-  const result = x + y;
-
-  if (typeof result !== 'number') { throw new TypeError(); }
-  return result;
-}
-=======
-const add = (x, y) => {
-  if (typeof x !== 'number') { throw new TypeError('x'); }
-  if (typeof y !== 'number') { throw new TypeError('y'); }
-
-  const result = x + y;
-
-  if (typeof result !== 'number') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/1-write-tests.js
 
 const _1_expect = 1;
 const _1_actual = add(1, 0);
@@ -129,26 +101,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-tests.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js:12
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -163,34 +129,16 @@ SyntaxError: Unexpected token <<
  * @param {any} b
  * @returns {boolean} result of the comparison
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js
 function strictEqual(a, b) {
 	// no need to check a or b, they can be any type
-||||||| merged common ancestors
-function strictEqual(a, b) {
-  // no need to check a or b, they can be any type
-=======
-const strictEqual = (a, b) => {
-  // no need to check a or b, they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js
 
 	const result = a === b;
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/2-write-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/2-write-tests.js
 
 const _1_expect = false;
 const _1_actual = strictEqual(NaN, NaN);
@@ -236,26 +184,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /3-pass-tests.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js:11
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -269,34 +211,16 @@ SyntaxError: Unexpected token <<
  * @param {any} b
  * @returns {boolean}
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js
 function sameTruthiness(a, b) {
 	// no need to check a or b, they can be any type
-||||||| merged common ancestors
-function sameTruthiness(a, b) {
-  // no need to check a or b, they can be any type
-=======
-const sameTruthiness = (a, b) => {
-  // no need to check a or b, they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js
 
 	const result = Boolean(a) === Boolean(b);
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/3-pass-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/3-pass-tests.js
 
 const _1_expect = false;
 const _1_actual = sameTruthiness(1, 0);
@@ -342,26 +266,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /4-pass-tests.js 
 
-> error (syntax) 
+> pass 
 >
 > [review source](../../../exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js:11
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -375,34 +293,16 @@ SyntaxError: Unexpected token <<
  * @param {any} a
  * @returns {boolean}
  */
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js
 function mystery(a) {
 	// no need to check a , they can be any type
-||||||| merged common ancestors
-function mystery(a) {
-  // no need to check a , they can be any type
-=======
-const mystery = (a) => {
-  // no need to check a , they can be any type
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js
 
 	const result = Number.isNaN(Number(a));
 
-<<<<<<< HEAD:exercises/10-functions-201/1-fill-in-the-blanks/4-pass-tests.js
 	if (typeof result !== 'boolean') {
 		throw new TypeError();
 	}
 	return result;
 }
-||||||| merged common ancestors
-  if (typeof result !== 'boolean') { throw new TypeError(); }
-  return result;
-}
-=======
-  if (typeof result !== 'boolean') { throw new TypeError('result'); }
-  return result;
-};
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/1-fill-in-the-blanks/4-pass-tests.js
 
 const _1_expect = false;
 const _1_actual = mystery('1');

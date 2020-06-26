@@ -1,33 +1,31 @@
 # Debuggercises 
 
-> 6/22/2020, 6:43:11 PM 
+> 6/26/2020, 9:10:39 PM 
 
 ## [exercises](../../README.md)/[15-while](../README.md)/exercises 
 
-- [/1-write-tests.js](#1-write-testsjs) - _incomplete_ 
-- [/2-fix-the-bugs.js](#2-fix-the-bugsjs) - _error_ 
-- [/3-pass-tests.js](#3-pass-testsjs) - _incomplete_ 
-- [/4-pass-tests.js](#4-pass-testsjs) - _incomplete_ 
+- [/1-write-tests.js](#1-write-testsjs) - _pass_ 
+- [/2-fix-the-bugs.js](#2-fix-the-bugsjs) - _pass_ 
+- [/3-pass-tests.js](#3-pass-testsjs) - _pass_ 
+- [/4-pass-tests.js](#4-pass-testsjs) - _pass_ 
 ---
 
 ## /1-write-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/15-while/exercises/1-write-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/15-while/exercises/1-write-tests.js:26:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
++ PASS: Test  7
++ PASS: Test  8
++ PASS: Test  9
 ```
 
 ```js
@@ -39,55 +37,58 @@ UNCAUGHT: ReferenceError: _ is not defined
  * @returns {number}
  */
 const mystery = (x) => {
-  if (typeof x !== 'number') { throw new TypeError('x'); }
+	if (typeof x !== 'number') {
+		throw new TypeError('x');
+	}
 
-  let result = 0;
-  while (result !== x) {
-    if (x > 0) {
-      result += 1;
-    } else {
-      result += -1;
-    }
-  }
+	let result = 0;
+	while (result !== x) {
+		if (x > 0) {
+			result += 1;
+		} else {
+			result += -1;
+		}
+	}
 
-  if (typeof result !== 'number') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'number') {
+		throw new TypeError('result');
+	}
+	return result;
 };
 
-
 const _1_actual = mystery(-4);
-const _1_expect = _;
+const _1_expect = -4;
 console.assert(_1_actual === _1_expect, 'Test  1');
 
-const _2_actual = mystery(_);
+const _2_actual = mystery(-3);
 const _2_expect = -3;
 console.assert(_2_actual === _2_expect, 'Test  2');
 
-const _3_actual = mystery(_);
+const _3_actual = mystery(-2);
 const _3_expect = -2;
 console.assert(_3_actual === _3_expect, 'Test  3');
 
 const _4_actual = mystery(-1);
-const _4_expect = _;
+const _4_expect = -1;
 console.assert(_4_actual === _4_expect, 'Test  4');
 
-const _5_expect = _;
+const _5_expect = 0;
 const _5_actual = mystery(0);
 console.assert(_5_actual === _5_expect, 'Test  5');
 
 const _6_expect = 1;
-const _6_actual = mystery(_);
+const _6_actual = mystery(1);
 console.assert(_6_actual === _6_expect, 'Test  6');
 
 const _7_expect = 2;
-const _7_actual = mystery(_);
+const _7_actual = mystery(2);
 console.assert(_7_actual === _7_expect, 'Test  7');
 
-const _8_expect = _;
+const _8_expect = 3;
 const _8_actual = mystery(3);
 console.assert(_8_actual === _8_expect, 'Test  8');
 
-const _9_expect = _;
+const _9_expect = 4;
 const _9_actual = mystery(4);
 console.assert(_9_actual === _9_expect, 'Test  9');
 
@@ -99,22 +100,17 @@ console.assert(_9_actual === _9_expect, 'Test  9');
 
 ## /2-fix-the-bugs.js 
 
-> error 
+> pass 
 >
 > [review source](../../../exercises/15-while/exercises/2-fix-the-bugs.js)
 
 ```txt
-UNCAUGHT: TypeError: result
-    at repeatLengthTimes (  ...  /exercises/15-while/exercises/2-fix-the-bugs.js:18:43)
-    at Object.<anonymous> (  ...  /exercises/15-while/exercises/2-fix-the-bugs.js:24:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
 ```
 
 ```js
@@ -126,19 +122,24 @@ UNCAUGHT: TypeError: result
  * @returns {string}
  */
 const repeatLengthTimes = (toRepeat) => {
-  if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
+	if (typeof toRepeat !== 'string') {
+		throw new TypeError('toRepeat');
+	}
 
-  const finalResultLength = toRepeat.length * toRepeat.length;
+	let range = 1;
+	const stringLength = toRepeat.length;
 
-  let result;
-  while (result < finalResultLength) {
-    result + toRepeat;
-  }
+	let result = '';
+	while (range <= stringLength) {
+		result += toRepeat;
+		range++;
+	}
 
-  if (typeof result !== 'string') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 const _1_expect = '3232';
 const _1_actual = repeatLengthTimes('32');
@@ -164,7 +165,6 @@ const _6_expect = '5432154321543215432154321';
 const _6_actual = repeatLengthTimes('54321');
 console.assert(_6_actual === _6_expect, 'Test  6');
 
-
 ```
 
 [TOP](#debuggercises)
@@ -173,22 +173,17 @@ console.assert(_6_actual === _6_expect, 'Test  6');
 
 ## /3-pass-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/15-while/exercises/3-pass-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at repeater (  ...  /exercises/15-while/exercises/3-pass-tests.js:14:21)
-    at Object.<anonymous> (  ...  /exercises/15-while/exercises/3-pass-tests.js:24:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
 ```
 
 ```js
@@ -202,17 +197,25 @@ UNCAUGHT: ReferenceError: _ is not defined
  * @returns {string}
  */
 const repeater = (text, repeats) => {
-  if (typeof text !== 'string') { throw new TypeError('text'); }
-  if (typeof repeats !== 'number') { throw new TypeError('repeats'); }
+	if (typeof text !== 'string') {
+		throw new TypeError('text');
+	}
+	if (typeof repeats !== 'number') {
+		throw new TypeError('repeats');
+	}
 
-  while (_) {
+	let range = 0;
+	let result = '';
+	while (range < repeats) {
+		result += `${range}${text} `;
+		range++;
+	}
 
-  }
-
-  if (typeof result !== 'string') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 const _1_expect = '018 118 218 ';
 const _1_actual = repeater('18', 3);
@@ -238,7 +241,6 @@ const _6_expect = '0-<=>- 1-<=>- 2-<=>- 3-<=>- ';
 const _6_actual = repeater('-<=>-', 4);
 console.assert(_6_actual === _6_expect, 'Test  6');
 
-
 ```
 
 [TOP](#debuggercises)
@@ -247,22 +249,17 @@ console.assert(_6_actual === _6_expect, 'Test  6');
 
 ## /4-pass-tests.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/15-while/exercises/4-pass-tests.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at alternator (  ...  /exercises/15-while/exercises/4-pass-tests.js:15:21)
-    at Object.<anonymous> (  ...  /exercises/15-while/exercises/4-pass-tests.js:25:19)
-    at Module._compile (module.js:652:30)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
 ```
 
 ```js
@@ -276,18 +273,35 @@ UNCAUGHT: ReferenceError: _ is not defined
  * @returns {string}
  */
 const alternator = (range, str1, str2) => {
-  if (typeof range !== 'number') { throw new TypeError('range'); }
-  if (typeof str1 !== 'string') { throw new TypeError('str1'); }
-  if (typeof str2 !== 'string') { throw new TypeError('str2'); }
+	if (typeof range !== 'number') {
+		throw new TypeError('range');
+	}
+	if (typeof str1 !== 'string') {
+		throw new TypeError('str1');
+	}
+	if (typeof str2 !== 'string') {
+		throw new TypeError('str2');
+	}
+	let result = '';
+	let start_range = 0;
+	if (range % 2) {
+		while (start_range < Math.floor(range / 2)) {
+			result += `${str1}${str2}`;
+			start_range++;
+		}
+		result += str1;
+	} else {
+		while (start_range < range / 2) {
+			result += `${str1}${str2}`;
+			start_range++;
+		}
+	}
 
-  while (_) {
-
-  }
-
-  if (typeof result !== 'string') { throw new TypeError('result'); }
-  return result;
+	if (typeof result !== 'string') {
+		throw new TypeError('result');
+	}
+	return result;
 };
-
 
 const _1_expect = '_-_';
 const _1_actual = alternator(3, '_', '-');
@@ -312,8 +326,6 @@ console.assert(_5_actual === _5_expect, 'Test  5');
 const _6_expect = '#######';
 const _6_actual = alternator(7, '#', '#');
 console.assert(_6_actual === _6_expect, 'Test  6');
-
-
 
 ```
 

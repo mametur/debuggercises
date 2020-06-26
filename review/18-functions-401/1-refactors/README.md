@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 6:43:11 PM 
+> 6/26/2020, 9:10:39 PM 
 
 ## [exercises](../../README.md)/[18-functions-401](../README.md)/1-refactors 
 
@@ -35,9 +35,13 @@
  * @param {any} b
  * @returns {any}
  */
+/*
 const mystery = (a, b) => (Boolean(a) !== Boolean(b))
   || b ? a && b : !b && !a;
-
+*/
+const mystery = (a, b) => {
+	return Boolean(a) !== Boolean(b) || b ? a && b : !b && !a;
+};
 
 const _1_arg1 = 1;
 const _1_arg2 = 1;
@@ -75,7 +79,6 @@ const _6_expect = 0;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-
 ```
 
 [TOP](#debuggercises)
@@ -107,10 +110,15 @@ console.assert(_6_actual === _6_expect, 'Test 6');
  * @param {any} b
  * @returns {boolean}
  */
+/*
 const mystery = (a, b) => typeof a !== b
   || !b
   && (Number.isNaN(b) || isNaN(a));
+*/
 
+const mystery = (a, b) => {
+	return typeof a !== b || (!b && (Number.isNaN(b) || isNaN(a)));
+};
 
 const _1_arg1 = 1;
 const _1_arg2 = 'number';
@@ -148,7 +156,6 @@ const _6_expect = true;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-
 ```
 
 [TOP](#debuggercises)
@@ -180,12 +187,12 @@ console.assert(_6_actual === _6_expect, 'Test 6');
  * @param {any} b
  * @returns {number}
  */
-const mystery = (a, b) => {
+/*const mystery = (a, b) => {
   const result = Number(typeof a === typeof b)
     && (a > b) ? Number(a) : Number(b);
   return result;
-};
-
+};*/
+const mystery = (a, b) => (Number(typeof a === typeof b) && a > b ? Number(a) : Number(b));
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';
@@ -223,7 +230,6 @@ const _6_expect = NaN;
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
-
 ```
 
 [TOP](#debuggercises)
@@ -255,11 +261,12 @@ console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
  * @param {any} b
  * @returns {string}
  */
+/*
 const mystery = (a, b) => {
   const result = String(a) || String(b);
   return result;
-};
-
+};*/
+const mystery = (a, b) => String(a) || String(b);
 
 const _1_arg1 = 'string';
 const _1_arg2 = '14';
@@ -296,7 +303,6 @@ const _6_arg2 = NaN;
 const _6_expect = 'Infinity';
 const _6_actual = mystery(_6_arg1, _6_arg2);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
-
 
 ```
 

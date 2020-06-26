@@ -1,36 +1,18 @@
 # Debuggercises 
 
-> 6/22/2020, 6:43:11 PM 
+> 6/26/2020, 9:10:39 PM 
 
 ## [exercises](../../README.md)/[12-functions-301](../README.md)/0-examples 
 
-- [/1-documenting-functions.js](#1-documenting-functionsjs) - _error (syntax)_ 
+- [/1-documenting-functions.js](#1-documenting-functionsjs)  
 - [/2-enforcing-types.js](#2-enforcing-typesjs)  
 ---
 
 ## /1-documenting-functions.js 
 
-> error (syntax) 
+>  
 >
 > [review source](../../../exercises/12-functions-301/0-examples/1-documenting-functions.js)
-
-```txt
-UNCAUGHT:   ...  /exercises/12-functions-301/0-examples/1-documenting-functions.js:23
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-^^
-
-SyntaxError: Unexpected token <<
-    at createScript (vm.js:80:10)
-    at Object.runInThisContext (vm.js:139:10)
-    at Module._compile (module.js:616:28)
-    at Object.Module._extensions..js (module.js:663:10)
-    at Module.load (module.js:565:32)
-    at tryModuleLoad (module.js:505:12)
-    at Function.Module._load (module.js:497:3)
-    at Module.require (module.js:596:17)
-    at require (internal/module.js:11:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:28:7) 
-```
 
 ```js
 'use strict';
@@ -55,20 +37,9 @@ SyntaxError: Unexpected token <<
  * @param {any} value - the value to check
  * @returns {string} - the type of the parameter
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-
-function findTheType(value) {
-	return value;
-}
-||||||| merged common ancestors
-function findTheType(value) {
-  return typeof value;
-}
-=======
 const findTheType = (value) => {
-  return typeof value;
+	return typeof value;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * adds two numbers together
@@ -76,19 +47,9 @@ const findTheType = (value) => {
  * @param {number} y
  * @returns {number} the sum of x and y
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function add(x, y) {
-	return x + y;
-}
-||||||| merged common ancestors
-function add(x, y) {
-  return x + y
-}
-=======
 const add = (x, y) => {
-  return x + y
+	return x + y;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * compares the type and value of two parameters
@@ -96,38 +57,18 @@ const add = (x, y) => {
  * @param {any} b
  * @returns {boolean} result of the comparison
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function strictEqual(a, b) {
-	return a === b;
-}
-||||||| merged common ancestors
-function strictEqual(a, b) {
-  return a === b;
-}
-=======
 const strictEqual = (a, b) => {
-  return a === b;
+	return a === b;
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 /**
  * returns a new string with all of the letters reversed
  * @param {string} str - the string to be reversed
  * @returns {string} a new string, the parameter backwards
  */
-<<<<<<< HEAD:exercises/10-functions-201/0-examples/1-documenting-functions.js
-function reverseString(str) {
-	return str.split('').reverse().join('');
-}
-||||||| merged common ancestors
-function reverseString(str) {
-  return str.split('').reverse().join('');
-}
-=======
 const reverseString = (str) => {
-  return str.split('').reverse().join('');
+	return str.split('').reverse().join('');
 };
->>>>>>> d7a0df91cdbeaabba9264cb3ac7fe6f23377b6f6:exercises/12-functions-301/0-examples/1-documenting-functions.js
 
 ```
 
